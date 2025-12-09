@@ -1,18 +1,19 @@
 #title in header
-title: "Hi Folks."
+title: "Seyoung Jeong"
 
 #main info
 #owner
-owner: "I am Adi Sakti Jrs"
-email: test@test.test
-info: "A student and web developer from Indonesia 🇮🇩"
+owner: "Hey! I'm Seyoung"
+email: #test@test.test
+info: "Embedded software engineer, tech blogger, and open source enthusiast."
 #description
-desc: "This is Minima, an undoubtedly simple and lightweight dark/light mode theme for Hexo. I created this from scratch using Skeleton CSS boilerplate. It only uses CSS and Vanilla JS, without using unnecessary third-party 'render-blocking' libraries! 😁"
+desc: "Welcome to my blog. My full name is Seokyoung, but I foten go by Seyoung or Seo. I'm writing in English and Korean about development, programming, and other tech-related topics. Enjoy your stay!"
 
 #menu
 menu:
-  Works: /Works
   About: /About
+  Projects: /Projects
+  Anything-Else: /Anything-Else
 
 #index/main page max show posts (in number)
 max_post: 4
@@ -27,7 +28,7 @@ tcolor: 0FA0CE
 usercss: css/user.css
 
 # social profile at the footer/bottom
-footer: true
+footer: false
 placename: Earth
 placelink: https://en.wikipedia.org/wiki/Earth
 github: https://github.com/adisaktijrs
