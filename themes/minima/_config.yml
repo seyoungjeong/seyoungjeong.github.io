@@ -13,7 +13,7 @@ desc: "Welcome to my blog. My full name is Seokyoung, but I foten go by Seyoung 
 menu:
   About: /About
   Projects: /Projects
-  Anything-Else: /Anything-Else
+  아무거나: /Anything-Else
 
 #index/main page max show posts (in number)
 max_post: 4
