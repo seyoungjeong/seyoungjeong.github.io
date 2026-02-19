@@ -1,0 +1,11 @@
+baseURL = 'https://seyoungjeong.github.io/'
+languageCode = 'ko-KR'
+title = 'Seyoung Jeong Blog'
+theme = 'PaperMod'
+
+[author]
+  name = "Seyoung Jeong"
+
+[params]
+  defaultTheme = 'auto'
+  author = "Seyoung Jeong"
