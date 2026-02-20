@@ -1,4 +1,4 @@
-baseURL = 'https://off-piste.netlify.app/'
+baseURL = 'https://seyoungjeong.github.io/'
 relativeURLs = true
 languageCode = 'ko-KR'
 title = 'Off Piste'
