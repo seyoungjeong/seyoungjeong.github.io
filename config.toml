@@ -1,4 +1,5 @@
-baseURL = '/'
+baseURL = 'https://seyoungjeong.github.io/'
+relativeURLs = true
 languageCode = 'ko-KR'
 title = 'Off Piste'
 theme = 'PaperMod'
