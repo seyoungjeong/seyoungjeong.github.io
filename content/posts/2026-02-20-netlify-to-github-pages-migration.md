@@ -65,3 +65,7 @@ GitHub Actions 환경 내에서 사이트가 빌드될 때 다음 두 가지 템
 
 * **Google Analytics (GA4)**: 속성 및 데이터 스트림 설정에서 추적 웹사이트의 URL을 신규 도메인 주소로 변경했습니다. (Tracking ID는 기존과 동일하게 유지)
 * **Google Search Console**: `config.toml` 내 변경된 `baseURL`로 인해 Hugo 빌드 시 사이트맵(`sitemap.xml`) 내부 URL이 신규 주소로 정상 재생성됩니다. 구글 서치콘솔 측에 신규 도메인 속성을 추가하고 새로 생성된 `sitemap.xml` 경로를 제출하여 인덱싱을 갱신했습니다.
+
+---
+
+*이 글은 Google의 Antigravity 에이전트의 도움을 받아 작성되었습니다.*
