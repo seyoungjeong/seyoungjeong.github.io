@@ -1,7 +1,7 @@
 baseURL = 'https://seyoungjeong.github.io/'
 relativeURLs = true
 languageCode = 'ko-KR'
-title = 'Off Piste'
+title = "Seyoung Jeong's Blog"
 theme = 'PaperMod'
 
 [author]
