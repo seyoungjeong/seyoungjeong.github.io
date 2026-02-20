@@ -1,6 +1,6 @@
 baseURL = 'https://seyoungjeong.github.io/'
 languageCode = 'ko-KR'
-title = 'Seyoung Jeong Blog'
+title = 'Off Piste'
 theme = 'PaperMod'
 
 [author]
