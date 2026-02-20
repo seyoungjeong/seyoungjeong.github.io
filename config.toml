@@ -9,3 +9,15 @@ theme = 'PaperMod'
 [params]
   defaultTheme = 'auto'
   author = "Seyoung Jeong"
+
+[[menu.main]]
+  identifier = "categories"
+  name = "Categories"
+  url = "/categories/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags/"
+  weight = 20
