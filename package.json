@@ -6,5 +6,8 @@
     "type": "git",
     "url": "https://github.com/seyoungjeong/seyoungjeong.github.io.git"
   },
+  "scripts": {
+    "build": "echo 'No node build required'"
+  },
   "dependencies": {}
 }
