@@ -22,3 +22,9 @@ theme = 'PaperMod'
   name = "Tags"
   url = "/tags/"
   weight = 20
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 30
