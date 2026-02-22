@@ -4,7 +4,8 @@
     {{- if site.Copyright }}
     <span>{{ site.Copyright | markdownify }}</span>
     {{- else }}
-    <span>&copy; {{ now.Year }} <a href="{{ 'about/' | absLangURL }}">Seyoung Jeong</a></span>
+    {{- $about_url := "about/" | absLangURL }}
+    <span>&copy; {{ now.Year }} <a href="{{ $about_url }}">Seyoung Jeong</a></span>
     {{- end }}
     {{- print " · "}}
     {{- end }}
