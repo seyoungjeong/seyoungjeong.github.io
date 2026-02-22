@@ -4,7 +4,7 @@ date: 2026-02-22T11:57:00+09:00
 description: "2019년 블리자드 브라마 88 (Blizzard Brahma 88)  사용 후기"
 categories: ["Ski"]
 tags: ["Ski", "Review", "Blizzard", "Brahma 88", "Atomic Bent Chetler 100"]
-draft: true
+draft: false 
 ---
 
 <!-- 여기에 글 작성을 시작하세요. -->
