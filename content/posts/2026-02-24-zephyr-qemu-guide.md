@@ -9,6 +9,15 @@ draft: false
 
 이번 포스트에서는 Mac(Apple Silicon, M1/M2/M3/M4) 환경에서 Zephyr RTOS 개발 환경을 설정하고, 실제 보드 하드웨어 없이 QEMU 에뮬레이터를 통해 애플리케이션을 빌드하고 테스트하는 방법을 알아보겠습니다.
 
+## 0. 사전 작업 (Changes Made)
+
+원활한 실습을 위해 이 가이드 작성 전에 다음과 같은 환경 구성을 미리 완료했습니다.
+
+* **System Dependencies**: Installed `cmake`, `ninja`, `qemu`, `ccache` and other required homebrew packages.
+* **Python Environment**: Created a virtual environment (`~/ws/zephyr-venv`), upgraded pip, and installed `west`.
+* **Zephyr Workspace**: Initialized the `west` workspace and pulled all external dependencies (`west update`). Installed required Python scripts.
+* **Zephyr SDK**: Downloaded and installed the `zephyr-sdk-0.16.8` with the `x86_64-zephyr-elf` toolchain for macOS ARM64.
+
 ## 1. Zephyr 가상 환경 활성화
 
 Zephyr의 자체 빌드 시스템인 `west`와 각종 도구들을 정상적으로 사용하려면, 먼저 파이썬 가상 환경을 활성화해야 합니다. 이전에 생성해 둔 가상 환경(`~/ws/zephyr-venv`)을 로드하고 작업 디렉토리로 이동합니다.
