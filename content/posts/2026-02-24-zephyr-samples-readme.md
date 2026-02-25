@@ -28,3 +28,8 @@ Zephyr RTOS의 `samples/` 디렉토리 내 다수의 샘플이 README 문서 없
 ## 활동 로그
 
 - **2026-02-24**: 5개 샘플 README.rst 작성 및 [PR #104439](https://github.com/zephyrproject-rtos/zephyr/pull/104439) 제출.
+- **2026-02-24**: 메인테이너 [@kartben](https://github.com/kartben) 리뷰 피드백 수신:
+  - 표준 템플릿(`doc/templates/sample.tmpl`) 미준수 → 형식 재작성 필요.
+  - 5개 샘플을 개별 PR로 분리 제출할 것 (각 플랫폼 메인테이너 리뷰 필요).
+  - 보드 문서 링크 추가 필요.
+- **2026-02-25**: 피드백 반영하여 `samples/subsys/pm/device_pm` README.rst를 표준 템플릿 기반으로 재작성, `qemu_x86`에서 빌드/실행 검증 후 [PR #104503](https://github.com/zephyrproject-rtos/zephyr/pull/104503) 제출.
