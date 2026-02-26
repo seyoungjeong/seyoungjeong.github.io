@@ -33,3 +33,7 @@ Zephyr RTOS의 `samples/` 디렉토리 내 다수의 샘플이 README 문서 없
   - 5개 샘플을 개별 PR로 분리 제출할 것 (각 플랫폼 메인테이너 리뷰 필요).
   - 보드 문서 링크 추가 필요.
 - **2026-02-25**: 피드백 반영하여 `samples/subsys/pm/device_pm` README.rst를 표준 템플릿 기반으로 재작성, `qemu_x86`에서 빌드/실행 검증 후 [PR #104503](https://github.com/zephyrproject-rtos/zephyr/pull/104503) 제출.
+  - 빌드 시 발생하는 Sphinx 경고(Doxygen group name 등) 수정 커밋 추가.
+- **2026-02-26**: 리뷰어 [@JordanYates](https://github.com/JordanYates) 리뷰 피드백 반영:
+  - 샘플 코드 내의 잘못된 API 사용(`pm_device_runtime_enable` 대신 `pm_device_driver_init` 사용)을 수정하여 불필요한 초기 suspend 로그 출력 제거.
+  - 수정된 샘플 코드 동작 결과를 반영하여 README.rst의 Expected Output 항목 업데이트.
