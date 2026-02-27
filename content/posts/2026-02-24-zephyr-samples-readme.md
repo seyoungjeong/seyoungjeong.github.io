@@ -37,3 +37,7 @@ Zephyr RTOS의 `samples/` 디렉토리 내 다수의 샘플이 README 문서 없
 - **2026-02-26**: 리뷰어 [@JordanYates](https://github.com/JordanYates) 리뷰 피드백 반영:
   - 샘플 코드 내의 잘못된 API 사용(`pm_device_runtime_enable` 대신 `pm_device_driver_init` 사용)을 수정하여 불필요한 초기 suspend 로그 출력 제거.
   - 수정된 샘플 코드 동작 결과를 반영하여 README.rst의 Expected Output 항목 업데이트.
+- **2026-02-27**: 추가 리뷰 피드백 반영 및 CI 실패 수정:
+  - `prj.conf`에 `CONFIG_PM_DEVICE_RUNTIME_DEFAULT_ENABLE=y` 추가 — 이 설정 없이는 런타임 PM이 실제로 활성화되지 않는 문제 해결.
+  - CI twister 테스트 실패 원인 분석: `sample.yaml` harness regex가 이전 출력 패턴(pre-main suspending 메시지)을 기대하여 120초 타임아웃 발생.
+  - `sample.yaml` harness regex 패턴을 새 출력에 맞게 수정하여 CI 테스트 통과 가능하도록 반영.
