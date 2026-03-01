@@ -2,7 +2,7 @@
 title: "Zephyr RTOS: pre-commit 훅 기반 자동 검사 셋업"
 date: 2026-02-28T17:55:00+09:00
 description: "Zephyr 프로젝트 커밋 시 코드 포맷 및 커밋 메시지 규정 준수를 자동 검사하는 pre-commit 훅 설정 가이드."
-categories: ["Zephyr", "Tech"]
+categories: ["Zephyr"]
 tags: ["Zephyr", "Git", "pre-commit"]
 draft: false
 ---

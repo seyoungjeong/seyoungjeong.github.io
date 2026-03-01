@@ -4,6 +4,9 @@ languageCode = 'ko-KR'
 title = "Seyoung Jeong's Blog"
 theme = 'PaperMod'
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [author]
   name = "Seyoung Jeong"
 
@@ -12,19 +15,43 @@ theme = 'PaperMod'
   author = "Seyoung Jeong"
 
 [[menu.main]]
-  identifier = "categories"
-  name = "Categories"
-  url = "/categories/"
-  weight = 10
+  identifier = "search"
+  name = "Search"
+  url = "/search/"
+  weight = 5
 
 [[menu.main]]
   identifier = "tags"
   name = "Tags"
   url = "/tags/"
+  weight = 10
+
+[[menu.bottom]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/categories/blog/"
+  weight = 10
+
+[[menu.bottom]]
+  identifier = "ski"
+  name = "Ski"
+  url = "/categories/ski/"
   weight = 20
 
-[[menu.main]]
+[[menu.bottom]]
+  identifier = "travel"
+  name = "Travel"
+  url = "/categories/travel/"
+  weight = 30
+
+[[menu.bottom]]
+  identifier = "zephyr"
+  name = "Zephyr"
+  url = "/categories/zephyr/"
+  weight = 40
+
+[[menu.bottom]]
   identifier = "about"
   name = "About"
   url = "/about/"
-  weight = 30
+  weight = 50

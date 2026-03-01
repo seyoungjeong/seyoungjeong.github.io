@@ -2,7 +2,7 @@
 title: "Netlify에서 GitHub Pages로 호스팅 환경 이전 및 Hugo 트러블슈팅"
 date: 2026-02-20T20:00:00+09:00
 description: "Netlify에서 GitHub Pages 및 Actions 기반으로 호스팅을 이전하는 절차와 관련 Hugo 빌드 에러 해결 방법에 대해 설명합니다."
-categories: ["Blog", "Tech"]
+categories: ["Blog"]
 tags: ["Hugo", "GitHub Pages", "GitHub Actions", "Netlify", "Decap CMS", "PaperMod", "Troubleshooting"]
 draft: false
 ---
