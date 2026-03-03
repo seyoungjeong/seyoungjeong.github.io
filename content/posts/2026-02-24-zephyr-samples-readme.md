@@ -42,3 +42,4 @@ Zephyr RTOS의 `samples/` 디렉토리 내 다수의 샘플이 README 문서 없
   - CI twister 테스트 실패 원인 분석: `sample.yaml` harness regex가 이전 출력 패턴(pre-main suspending 메시지)을 기대하여 120초 타임아웃 발생.
   - `sample.yaml` harness regex 패턴을 새 출력에 맞게 수정하여 CI 테스트 통과 가능하도록 반영.
 - **2026-02-28**: PR CI Compliance 검사 실패(커밋 메시지 너비 75자 초과) 확인 및 커밋 메시지를 72자로 줄바꿈(wrap)하여 강제 푸시 완료.
+- **2026-03-02**: 메인테이너 [@kartben](https://github.com/kartben)의 추가 피드백을 반영하여 수정 커밋 푸시. SonarCloud Quality Gate 검사 통과 확인.
