@@ -1,6 +1,6 @@
 ---
 title: "Zephyr RTOS: ZMS free space 테스트 코드 리뷰 및 개선"
-date: 2026-03-03T20:17:00+09:00
+date: 2026-03-03T19:00:00+09:00
 description: "ZMS free space 테스트의 코드 품질 문제(magic number, 변수 명명, 매크로 스코프, O(N²) 성능)를 발견하고 수정한 기록."
 categories: ["Zephyr"]
 tags: ["Zephyr", "Open Source", "Code Review", "Contributing"]
