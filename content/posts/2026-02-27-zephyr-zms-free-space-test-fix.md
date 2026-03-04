@@ -38,4 +38,5 @@ ZMS 구현 자체는 정상. 테스트 로직 버그.
 - **2026-02-27**: Option A(테스트 전용 수정) 적용. `qemu_x86` 기본 설정에서 8/8 configurations, 107/107 test cases 통과 확인.
 - **2026-02-27**: [PR #104644](https://github.com/zephyrproject-rtos/zephyr/pull/104644) 제출.
 - **2026-03-02**: PR 리뷰 피드백 반영 (Magic number, 변수 선언 위치, 불필요한 매크로 등 코드 품질 정리).
-- **2026-03-03**: [ZMS free space 테스트 코드 리뷰 및 개선](./2026-03-03-zephyr-zms-test-code-review.md) 작성, ZMS `write_block_size` 정렬로 인한 테스트 성능(O(N²)) 개선 및 검증 완료.
+- **2026-03-03**: [ZMS free space 테스트 코드 리뷰 및 개선](./2026-03-03-zephyr-zms-test-code-review.md) 작성, ZMS `write_block_size` 정렬로 인한 테스트 성능(O(N²)) 개선 및 검증 완료. 20분 걸리던 테스트가 2분으로 단축됨.
+- **2026-03-03**: delete check를 매번하지 않고 periodic하게 수행하도록 변경하여 2분에서 23초로 개선. @butok approved PR. 아직 approval이 한명 더 필요.
