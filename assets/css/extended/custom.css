@@ -1,1 +1,5 @@
 .entry-link { z-index: 2; }
+
+.post-content li:has(input[type="checkbox"]) {
+    list-style-type: none;
+}

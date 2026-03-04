@@ -57,6 +57,12 @@ theme = 'PaperMod'
   weight = 40
 
 [[menu.bottom]]
+  identifier = "bmm"
+  name = "BMM"
+  url = "/categories/bmm/"
+  weight = 45
+
+[[menu.bottom]]
   identifier = "about"
   name = "About"
   url = "/about/"
