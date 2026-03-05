@@ -1,5 +1,5 @@
 ---
-title: "Book, Movie, and Music wishlist"
+title: "BMM Wishlist"
 date: 2026-03-03T19:00:00+09:00
 description: "Book, Movie, and Music wishlist"
 categories: ["BMM" ]
