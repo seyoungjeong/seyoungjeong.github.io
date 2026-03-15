@@ -1,7 +1,7 @@
 ---
 title: "Utah Ski Trip"
 date: 2026-03-14T22:36:00-06:00
-description: "Draft post about my recent ski trip to Utah."
+description: "2026 유타 스키 여행에 대한 짧은 기록"
 categories: ["Ski", "Travel"]
 tags: ["ski", "travel", "utah"]
 draft: false
