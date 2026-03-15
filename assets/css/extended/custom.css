@@ -52,7 +52,7 @@
 }
 
 body {
-    font-family: 'JetBrains Mono', 'NeoDGM', monospace !important;
+    font-family: 'JetBrains Mono', 'Pretendard Variable', Pretendard, monospace !important;
 }
 
 :root,
@@ -190,7 +190,7 @@ pre:hover .copy-code {
     align-items: center;
     gap: 8px;
     flex-wrap: wrap;
-    font-family: 'JetBrains Mono', 'NeoDGM', monospace;
+    font-family: 'JetBrains Mono', 'Pretendard Variable', Pretendard, monospace;
 }
 
 .custom-top-meta .meta-tag-pill {
