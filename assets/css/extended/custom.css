@@ -1,11 +1,229 @@
-body {
-    font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('/fonts/JetBrainsMono-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('/fonts/JetBrainsMono-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('/fonts/JetBrainsMono-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('/fonts/JetBrainsMono-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NeoDGM';
+    src: url('/fonts/neodgm.woff2') format('woff2'),
+         url('/fonts/neodgm.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* Hangul Jamo, Hangul Compat Jamo, Hangul Jamo Extended-A,
+       Hangul Syllables, Hangul Jamo Extended-B */
+    unicode-range: U+1100-11FF, U+3130-318F, U+A960-A97F, U+AC00-D7A3, U+D7B0-D7FF;
+}
+
+@font-face {
+    font-family: 'NeoDGM-Logo';
+    src: url('/fonts/neodgm.woff2') format('woff2'),
+         url('/fonts/neodgm.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'JetBrains Mono', 'NeoDGM', monospace !important;
+}
+
+:root,
+:root[data-theme="dark"] {
+    --theme: #000000;
+}
+
+/* Misc fixes */
 .entry-link {
     z-index: 2;
 }
 
 .post-content li:has(input[type="checkbox"]) {
     list-style-type: none;
+}
+
+/* Typography matched from https://codespeak.dev/blog/greenfield-project-tutorial-20260209 (with larger headings) */
+h1, .post-title {
+    font-size: 48px !important;
+    line-height: 48px !important;
+    font-weight: 700 !important;
+}
+
+h2 {
+    font-size: 32px !important;
+    line-height: 40px !important;
+    font-weight: 700 !important;
+}
+
+/* Make list titles smaller than standard h2 */
+.entry-hint-parent {
+    font-size: 24px !important;
+    line-height: 32px !important;
+}
+
+h3 {
+    font-size: 24px !important;
+    line-height: 32px !important;
+    font-weight: 700 !important;
+}
+
+h4 {
+    font-size: 20px !important;
+    line-height: 28px !important;
+    font-weight: 700 !important;
+}
+
+h5 {
+    font-size: 18px !important;
+    line-height: 26px !important;
+    font-weight: 700 !important;
+}
+
+h6 {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    font-weight: 700 !important;
+}
+
+body, p, li {
+    font-size: 16px !important;
+    line-height: 28px !important;
+    font-weight: 400;
+}
+
+/* Smaller description for list view */
+.entry-content, .entry-content p {
+    font-size: 14px !important;
+    line-height: 24px !important;
+}
+
+/* Block code (in <pre>) */
+pre code, .highlight code {
+    font-size: 14px !important;
+    line-height: 24px !important;
+    font-weight: 400;
+}
+
+/* Inline code not inside pre */
+:not(pre) > code {
+    font-size: 14px !important;
+    line-height: 24.5px !important;
+    font-weight: 600 !important;
+    color: #05df72 !important;
+    background-color: #0d0d0d !important;
+}
+
+/* Links inside posts */
+.post-content a {
+    color: #05df72 !important;
+    text-decoration: underline;
+    text-decoration-color: rgba(5, 223, 114, 0.4);
+}
+
+.post-content a:hover {
+    text-decoration-color: #05df72;
+}
+
+/* Copy button styling (SVG icons) */
+.copy-code {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 24px;
+    height: 24px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background: #080e09 !important; /* matches dark black-green */
+    border: 1px solid #05df72 !important; /* sharp green border */
+    border-radius: 4px;
+    color: #05df72 !important;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.highlight:hover .copy-code,
+pre:hover .copy-code {
+    opacity: 1;
+}
+
+.copy-code:hover {
+    background: #0d1a10 !important;
+    color: #4ade80 !important;
+    box-shadow: 0 0 8px rgba(5, 223, 114, 0.4);
+}
+
+/* Custom Top Meta styling */
+.custom-top-meta {
+    font-size: 12px;
+    color: #05df72; /* matching the green shade */
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    font-family: 'JetBrains Mono', 'NeoDGM', monospace;
+}
+
+.custom-top-meta .meta-tag-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    border: 1px solid #05df72;
+    border-radius: 12px;
+    color: #05df72;
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 1.2;
+    background: transparent;
+    transition: background 0.2s, color 0.2s;
+}
+
+.custom-top-meta .meta-tag-pill:hover {
+    background: #05df72;
+    color: #000000;
+}
+
+.meta-separator {
+    color: #05df72;
+    opacity: 0.7;
+}
+
+/* Custom logo heading styling */
+.logo a, .logo a:hover {
+    font-family: 'NeoDGM-Logo', monospace !important;
+    color: #05df72 !important;
+}
+
+/* Make list items background darker */
+.post-entry {
+    background: #0d0d0d !important;
 }
