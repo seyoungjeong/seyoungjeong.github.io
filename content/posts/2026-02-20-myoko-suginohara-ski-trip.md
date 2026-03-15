@@ -2,7 +2,7 @@
 title: "Myoko Suginohara 스키 여행"
 date: 2026-02-20T21:05:00+09:00
 description: "2026년 1월, 일본 니가타 현 묘코 스기노하라(Myoko Suginohara) 스키 여행 기록"
-categories: ["Travel"]
+categories: ["Ski", "Travel"]
 tags: ["Japan", "Myoko Suginohara", "Ski", "Travel", "2026"]
 draft: false
 ---
