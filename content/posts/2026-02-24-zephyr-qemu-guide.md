@@ -2,7 +2,7 @@
 title: "Zephyr Environment Setup & QEMU Walkthrough"
 date: 2026-02-24T07:40:00+09:00
 description: "Setting up Zephyr RTOS development environment on Mac (Apple Silicon) and building/testing applications via QEMU emulator"
-categories: ["Zephyr"]
+categories: ["Coding"]
 tags: ["Zephyr", "QEMU", "Embedded", "Mac", "Apple Silicon"]
 draft: false
 ---
