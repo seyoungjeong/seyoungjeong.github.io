@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
 @font-face {
     font-family: 'JetBrains Mono';
     src: url('/fonts/JetBrainsMono-Regular.woff2') format('woff2');
@@ -33,7 +35,7 @@
 @font-face {
     font-family: 'NeoDGM';
     src: url('/fonts/neodgm.woff2') format('woff2'),
-         url('/fonts/neodgm.woff') format('woff');
+        url('/fonts/neodgm.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -45,7 +47,7 @@
 @font-face {
     font-family: 'NeoDGM-Logo';
     src: url('/fonts/neodgm.woff2') format('woff2'),
-         url('/fonts/neodgm.woff') format('woff');
+        url('/fonts/neodgm.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -70,7 +72,8 @@ body {
 }
 
 /* Typography matched from https://codespeak.dev/blog/greenfield-project-tutorial-20260209 (with larger headings) */
-h1, .post-title {
+h1,
+.post-title {
     font-size: 48px !important;
     line-height: 48px !important;
     font-weight: 700 !important;
@@ -112,27 +115,31 @@ h6 {
     font-weight: 700 !important;
 }
 
-body, p, li {
+body,
+p,
+li {
     font-size: 16px !important;
-    line-height: 28px !important;
-    font-weight: 400;
+    line-height: 24px !important;
+    font-weight: 200;
 }
 
 /* Smaller description for list view */
-.entry-content, .entry-content p {
+.entry-content,
+.entry-content p {
     font-size: 14px !important;
     line-height: 24px !important;
 }
 
 /* Block code (in <pre>) */
-pre code, .highlight code {
+pre code,
+.highlight code {
     font-size: 14px !important;
     line-height: 24px !important;
     font-weight: 400;
 }
 
 /* Inline code not inside pre */
-:not(pre) > code {
+:not(pre)>code {
     font-size: 14px !important;
     line-height: 24.5px !important;
     font-weight: 600 !important;
@@ -161,8 +168,10 @@ pre code, .highlight code {
     display: flex !important;
     align-items: center;
     justify-content: center;
-    background: #080e09 !important; /* matches dark black-green */
-    border: 1px solid #05df72 !important; /* sharp green border */
+    background: #080e09 !important;
+    /* matches dark black-green */
+    border: 1px solid #05df72 !important;
+    /* sharp green border */
     border-radius: 4px;
     color: #05df72 !important;
     cursor: pointer;
@@ -184,7 +193,8 @@ pre:hover .copy-code {
 /* Custom Top Meta styling */
 .custom-top-meta {
     font-size: 12px;
-    color: #05df72; /* matching the green shade */
+    color: #05df72;
+    /* matching the green shade */
     margin-bottom: 12px;
     display: flex;
     align-items: center;
@@ -218,7 +228,8 @@ pre:hover .copy-code {
 }
 
 /* Custom logo heading styling */
-.logo a, .logo a:hover {
+.logo a,
+.logo a:hover {
     font-family: 'NeoDGM-Logo', monospace !important;
     color: #05df72 !important;
 }
