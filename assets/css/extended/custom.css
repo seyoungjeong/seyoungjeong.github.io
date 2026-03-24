@@ -60,6 +60,8 @@ body {
 :root,
 :root[data-theme="dark"] {
     --theme: #000000;
+    --gap: 40px;
+    --main-width: 640px;
 }
 
 /* Misc fixes */
