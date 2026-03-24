@@ -236,7 +236,15 @@ pre:hover .copy-code {
     color: #05df72 !important;
 }
 
-/* Make list items background darker */
+/* Make list items background darker and override padding */
 .post-entry {
     background: #0d0d0d !important;
+    padding: 20px !important;
+    margin-bottom: 24px !important;
+}
+
+/* Make title font smaller in the list box */
+.post-entry .entry-header h2 {
+    font-size: 18px !important;
+    line-height: 1.4 !important;
 }
