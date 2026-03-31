@@ -11,7 +11,7 @@ theme = 'PaperMod'
   name = "Seyoung Jeong"
 
 [params]
-  defaultTheme = 'dark'
+  defaultTheme = 'auto'
   disableThemeToggle = false
   ShowCodeCopyButtons = true
   author = "Seyoung Jeong"
