@@ -124,7 +124,7 @@ p,
 li {
     font-size: 14px !important;
     line-height: 24px !important;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 /* Smaller description for list view */
@@ -252,12 +252,16 @@ pre:hover .copy-code {
 }
 
 /* Custom index page list */
-.monthly-archive { margin-top: 30px; }
-.archive-month { 
-    margin-bottom: 40px; 
+.monthly-archive {
+    margin-top: 30px;
+}
+
+.archive-month {
+    margin-bottom: 40px;
     display: block !important;
 }
-.archive-month-header { 
+
+.archive-month-header {
     font-size: 14px !important;
     width: auto !important;
     border-bottom: 1px dashed var(--border);
@@ -266,29 +270,36 @@ pre:hover .copy-code {
     font-weight: 200 !important;
     color: var(--primary) !important;
 }
+
 .archive-month-posts {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
+
 .custom-post-item {
     font-size: 14px;
     line-height: 1.6;
     padding-left: 24px;
     text-indent: -24px;
 }
+
 .custom-post-item a {
     text-decoration: none;
 }
+
 .custom-post-link strong {
     color: #6c8cff;
 }
+
 .custom-post-link:hover strong {
     text-decoration: underline;
 }
+
 .custom-post-desc {
     opacity: 0.8;
 }
+
 .custom-post-date {
     opacity: 0.6;
     font-size: 12px;
