@@ -159,11 +159,12 @@ pre code,
 /* Links inside posts */
 .post-content a {
     color: #6c8cff !important;
-    text-decoration: underline;
-    text-decoration-color: rgba(108, 140, 255, 0.4);
+    text-decoration: none;
+    box-shadow: none !important;
 }
 
 .post-content a:hover {
+    text-decoration: underline;
     text-decoration-color: #6c8cff;
 }
 
