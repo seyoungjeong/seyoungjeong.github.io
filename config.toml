@@ -1,7 +1,7 @@
 baseURL = 'https://seyoungjeong.github.io/'
 relativeURLs = true
 languageCode = 'ko-KR'
-title = "<Seyoung Jeong>"
+title = "Seyoung Jeong"
 theme = 'PaperMod'
 
 [outputs]
@@ -12,7 +12,7 @@ theme = 'PaperMod'
 
 [params]
   defaultTheme = 'dark'
-  disableThemeToggle = true
+  disableThemeToggle = false
   ShowCodeCopyButtons = true
   author = "Seyoung Jeong"
 
