@@ -12,7 +12,7 @@ draft: false
 
 `.map` 파일은 빌드된 결과물을 원본 소스코드와 `map`하기 위한 정보를 담고 있다. 개발자가 디버깅을 할 때 필요한 정보이고, 일반적으로 정식 릴리즈에는 포함되지 않는 파일이다.
 
-```
+```json
 {
   "version": 3,
   "sources": ["src/main.ts", "src/tools/bash.ts", "src/query.ts"],
