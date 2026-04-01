@@ -33,4 +33,4 @@ Anthropic은 대응은 쿨 하다.
 
 * [Claude Code documentation](https://www.mintlify.com/VineeTagarwaL-code/claude-code) - 내부에서 어떻게 동작하는지 살짝 들여다 볼 수 있다.
 * [Claw Code](https://github.com/instructkr/claw-code) - Claude Code의 Python / Rust 클론
-
+* [Open Claude](https://github.com/Gitlawb/openclaude) - 유출된 Claude Code를 fork해서 다른 LLM을 쓸 수 있게 함
