@@ -6,7 +6,7 @@ description: GPT-2 스타일 decoder-only transformer를 3일 계획으로 구�
 categories:
   - Coding
 tags:
-  - LLM
+  - StudyLLM
 draft: false
 ---
 # Study LLM — 3-Day Implementation Plan
