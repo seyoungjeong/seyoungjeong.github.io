@@ -1,0 +1,15 @@
+{{ $src := .Get 0 }}
+{{ $id := printf "drawio-%s" (md5 $src) }}
+<div id="{{ $id }}" class="mxgraph"
+  style="max-width:100%;border:1px solid #e0e0e0;border-radius:4px;"
+  data-mxgraph='{"highlight":"#0000ff","nav":true,"resize":true,"toolbar":"zoom layers lightbox","xml":"","url":"{{ $src }}"}'>
+</div>
+<script>
+  (function() {
+    if (window.mxGraphInitialized) return;
+    window.mxGraphInitialized = true;
+    var s = document.createElement("script");
+    s.src = "https://viewer.diagrams.net/js/viewer-static.min.js";
+    document.head.appendChild(s);
+  })();
+</script>

@@ -1,0 +1,422 @@
+<mxfile host="app.diagrams.net" modified="2026-04-04T00:00:00.000Z" agent="Claude" version="21.0.0" type="device">
+  <diagram id="system-overview" name="System overview">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Study LLM — System overview" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="400" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- RAW TEXT -->
+        <mxCell id="rawtext" value="Raw text corpus&#xa;Shakespeare / WikiText-2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- DATA PIPELINE container -->
+        <mxCell id="dp_container" value="Data pipeline" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="60" width="220" height="280" as="geometry" />
+        </mxCell>
+
+        <!-- Tokenizer -->
+        <mxCell id="tokenizer" value="Tokenizer&#xa;char-level or BPE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="dp_container">
+          <mxGeometry x="20" y="50" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Encode + split -->
+        <mxCell id="encode" value="Encode + split&#xa;90% train / 10% val" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="dp_container">
+          <mxGeometry x="20" y="120" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Binary store -->
+        <mxCell id="binstore" value="train.bin / val.bin&#xa;uint16 token arrays" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="dp_container">
+          <mxGeometry x="20" y="190" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- arrows inside data pipeline -->
+        <mxCell id="e_tok_enc" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="tokenizer" target="encode" parent="dp_container">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_enc_bin" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="encode" target="binstore" parent="dp_container">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- MODEL ARCHITECTURE container -->
+        <mxCell id="model_container" value="Model architecture" style="swimlane;startSize=30;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="420" width="220" height="310" as="geometry" />
+        </mxCell>
+
+        <!-- Embedding layer -->
+        <mxCell id="embed" value="Embedding layer&#xa;token + positional" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="model_container">
+          <mxGeometry x="20" y="50" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Transformer blocks -->
+        <mxCell id="tblocks" value="Transformer block × N&#xa;attn + FFN + residuals" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="model_container">
+          <mxGeometry x="20" y="130" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Output head -->
+        <mxCell id="outhead" value="Output head&#xa;LayerNorm → linear → logits" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="model_container">
+          <mxGeometry x="20" y="210" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- arrows inside model -->
+        <mxCell id="e_emb_tb" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="embed" target="tblocks" parent="model_container">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_tb_out" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="tblocks" target="outhead" parent="model_container">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- TRAINING LOOP container -->
+        <mxCell id="train_container" value="Training loop" style="swimlane;startSize=30;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="420" width="220" height="310" as="geometry" />
+        </mxCell>
+
+        <!-- DataLoader -->
+        <mxCell id="dataloader" value="DataLoader&#xa;random batch sampler" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="train_container">
+          <mxGeometry x="20" y="50" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Forward + loss -->
+        <mxCell id="fwdloss" value="Forward + loss&#xa;cross-entropy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="train_container">
+          <mxGeometry x="20" y="130" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Backward + AdamW -->
+        <mxCell id="bwdopt" value="Backward + AdamW&#xa;cosine LR, grad clip" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="train_container">
+          <mxGeometry x="20" y="210" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- arrows inside training loop -->
+        <mxCell id="e_dl_fwd" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="dataloader" target="fwdloss" parent="train_container">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_fwd_bwd" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="fwdloss" target="bwdopt" parent="train_container">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Checkpoint -->
+        <mxCell id="checkpoint" value="Checkpoint (.pt)&#xa;weights + config" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="320" y="780" width="220" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- INFERENCE ENGINE container -->
+        <mxCell id="infer_container" value="Inference engine" style="swimlane;startSize=30;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="420" width="220" height="310" as="geometry" />
+        </mxCell>
+
+        <!-- Load checkpoint -->
+        <mxCell id="loadckpt" value="Load checkpoint&#xa;weights + config" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="infer_container">
+          <mxGeometry x="20" y="50" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Autoregressive loop -->
+        <mxCell id="arloop" value="Autoregressive loop&#xa;forward → sample → append" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="infer_container">
+          <mxGeometry x="20" y="130" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Sampling strategy -->
+        <mxCell id="sampling" value="Sampling strategy&#xa;temp / top-k / top-p" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="infer_container">
+          <mxGeometry x="20" y="210" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- arrows inside inference -->
+        <mxCell id="e_lc_ar" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="loadckpt" target="arloop" parent="infer_container">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ar_samp" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="arloop" target="sampling" parent="infer_container">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Text output -->
+        <mxCell id="textout" value="Text output" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="780" width="220" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- CROSS-SUBSYSTEM arrows -->
+        <!-- raw text → tokenizer -->
+        <mxCell id="e_raw_tok" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="rawtext" target="tokenizer" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- binstore → dataloader -->
+        <mxCell id="e_bin_dl" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="binstore" target="dataloader" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- model → training loop (model used by training) -->
+        <mxCell id="e_model_train" value="logits" style="edgeStyle=orthogonalEdgeStyle;dashed=1;" edge="1" source="model_container" target="fwdloss" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- training → checkpoint -->
+        <mxCell id="e_train_ckpt" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="bwdopt" target="checkpoint" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- checkpoint → inference -->
+        <mxCell id="e_ckpt_infer" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="checkpoint" target="loadckpt" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- inference → text output -->
+        <mxCell id="e_samp_out" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="sampling" target="textout" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <diagram id="training-dataflow" name="Training data flow">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title2" value="Study LLM — Training data flow (one batch)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="20" width="500" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- FORWARD PASS label -->
+        <mxCell id="fwd_label" value="Forward pass" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontStyle=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="65" width="120" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Sample batch -->
+        <mxCell id="f_sample" value="Sample batch&#xa;[B, T] token ids" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="90" width="150" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Embed -->
+        <mxCell id="f_embed" value="Embed&#xa;[B, T, d_model]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="90" width="150" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- N Transformer blocks -->
+        <mxCell id="f_blocks" value="× N transformer blocks&#xa;[B, T, d_model]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="90" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Output head -->
+        <mxCell id="f_outhead" value="Output head&#xa;[B, T, vocab_size]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="90" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Forward arrows -->
+        <mxCell id="e_s_e" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f_sample" target="f_embed" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_e_b" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f_embed" target="f_blocks" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_b_o" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f_blocks" target="f_outhead" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- LOSS -->
+        <mxCell id="loss_label" value="Loss" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontStyle=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="700" y="185" width="80" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Cross-entropy loss -->
+        <mxCell id="f_loss" value="Cross-entropy loss&#xa;logits vs target y" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="210" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Target y -->
+        <mxCell id="f_target" value="Target y&#xa;tokens shifted by 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="210" width="150" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- loss arrows -->
+        <mxCell id="e_oh_loss" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f_outhead" target="f_loss" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_tgt_loss" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f_target" target="f_loss" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="115" y="340" />
+              <mxPoint x="760" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- BACKWARD PASS label -->
+        <mxCell id="bwd_label" value="Backward pass" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontStyle=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="365" width="140" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- loss.backward -->
+        <mxCell id="f_backward" value="loss.backward()&#xa;compute all gradients" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="390" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Clip gradients -->
+        <mxCell id="f_clip" value="Clip gradients&#xa;max norm = 1.0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="390" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- AdamW step -->
+        <mxCell id="f_adamw" value="AdamW step&#xa;update weights" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="390" width="150" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- LR scheduler -->
+        <mxCell id="f_lrsched" value="LR scheduler&#xa;warmup → cosine" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="390" width="150" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Eval/perplexity -->
+        <mxCell id="f_eval" value="Val loss / perplexity&#xa;every 200 steps" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="670" y="510" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Backward arrows -->
+        <mxCell id="e_loss_bwd" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f_loss" target="f_backward" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_bwd_clip" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f_backward" target="f_clip" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_clip_adam" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f_clip" target="f_adamw" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_adam_lr" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f_adamw" target="f_lrsched" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_bwd_eval" style="edgeStyle=orthogonalEdgeStyle;dashed=1;" edge="1" source="f_backward" target="f_eval" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Loop back arrow -->
+        <mxCell id="e_loop" value="next batch" style="edgeStyle=orthogonalEdgeStyle;dashed=1;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" source="f_lrsched" target="f_sample" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="20" y="420" />
+              <mxPoint x="20" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <diagram id="transformer-block" name="Transformer block detail">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="tb_title" value="Transformer block — internal detail (× N)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="20" width="450" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Input x -->
+        <mxCell id="tb_in" value="Input x&#xa;[B, T, d_model]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="260" y="70" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- LayerNorm 1 -->
+        <mxCell id="tb_ln1" value="LayerNorm (pre-norm)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="160" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Multi-head self-attention -->
+        <mxCell id="tb_attn" value="Multi-head self-attention&#xa;Q·Kᵀ/√d → softmax → ·V" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="250" width="260" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Residual add 1 -->
+        <mxCell id="tb_res1" value="Add residual (x + attn_out)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="260" y="360" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Residual bypass 1 -->
+        <mxCell id="tb_bypass1" value="" style="edgeStyle=orthogonalEdgeStyle;dashed=1;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" source="tb_in" target="tb_res1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="95" />
+              <mxPoint x="200" y="385" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bypass1_label" value="residual" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="160" y="220" width="60" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- LayerNorm 2 -->
+        <mxCell id="tb_ln2" value="LayerNorm (pre-norm)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="460" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- FFN -->
+        <mxCell id="tb_ffn" value="Feed-forward network&#xa;Linear → GELU → Linear&#xa;(4× expansion)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="555" width="260" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- Residual add 2 -->
+        <mxCell id="tb_res2" value="Add residual (x + ffn_out)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="260" y="675" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Residual bypass 2 -->
+        <mxCell id="tb_bypass2" value="" style="edgeStyle=orthogonalEdgeStyle;dashed=1;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" source="tb_res1" target="tb_res2" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="385" />
+              <mxPoint x="510" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bypass2_label" value="residual" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="530" width="60" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Output x' -->
+        <mxCell id="tb_out" value="Output x&#39;&#xa;[B, T, d_model]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="260" y="770" width="180" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Main flow arrows -->
+        <mxCell id="e_in_ln1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="tb_in" target="tb_ln1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ln1_attn" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="tb_ln1" target="tb_attn" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_attn_res1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="tb_attn" target="tb_res1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_res1_ln2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="tb_res1" target="tb_ln2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ln2_ffn" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="tb_ln2" target="tb_ffn" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ffn_res2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="tb_ffn" target="tb_res2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_res2_out" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="tb_res2" target="tb_out" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Notes -->
+        <mxCell id="note_dropout" value="Dropout 0.1 applied&#xa;after attn weights&#xa;and after FFN output" style="text;html=1;strokeColor=#666666;fillColor=#f5f5f5;fontSize=10;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="555" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="note_causal" value="Causal mask applied&#xa;inside attention:&#xa;position t can only&#xa;attend to t&#39; ≤ t" style="text;html=1;strokeColor=#666666;fillColor=#f5f5f5;fontSize=10;align=left;" vertex="1" parent="1">
+          <mxGeometry x="510" y="250" width="160" height="60" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
