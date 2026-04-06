@@ -29,7 +29,7 @@ Anthropic은 대응은 쿨 하다.
 
 > "Earlier today, a Claude Code release included some internal source code. No sensitive customer data or credentials were involved or exposed. This was a release packaging issue caused by human error, not a security breach. We're rolling out measures to prevent this from happening again."
 
-유출된 소스 코드를 다시 Claude Code에 먹여서 이런 저런 결과들이 나오고 있는데 내 레이더에 잡힌 두 개.
+유출된 소스 코드를 다시 Claude Code에 먹여서 이런 저런 결과들이 나오고 있는데 내 레이더에 잡힌 몇 개.
 
 * [Claude Code documentation](https://www.mintlify.com/VineeTagarwaL-code/claude-code) - 내부에서 어떻게 동작하는지 살짝 들여다 볼 수 있다.
 * [Claw Code](https://github.com/instructkr/claw-code) - Claude Code의 Python / Rust 클론
