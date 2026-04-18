@@ -1,7 +1,7 @@
 ---
 title: The Last Qeustion by Issac Asimov
-date: 2026-04-18T18:30:59+09:00
-lastmod: 2026-04-18T18:44:41+09:00
+date: 2026-04-18T18:30:59
+lastmod: 2026-04-18T19:02:49
 description: 아이작 아시모프의 최후의 질문
 categories: []
 tags:
