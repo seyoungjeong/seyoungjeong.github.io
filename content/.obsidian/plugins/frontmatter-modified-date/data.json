@@ -1,7 +1,7 @@
 {
   "frontmatterProperty": "lastmod",
   "createdDateProperty": "date",
-  "momentFormat": "YYYY-MM-DDTHH:mm:ss",
+  "momentFormat": "YYYY-MM-DDTHH:mm:ssZ",
   "momentLocale": "",
   "storeHistoryLog": false,
   "historyNewestFirst": false,

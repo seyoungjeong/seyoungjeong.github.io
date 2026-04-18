@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/2026-03-18-the-last-question.md",
+                "file": "posts/2026-04-18-the-last-question.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-18-the-last-question"
+              "title": "2026-04-18-the-last-question"
             }
           }
         ],
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/2026-03-18-the-last-question.md",
+                "file": "posts/2026-04-18-the-last-question.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2026-03-18-the-last-question"
+              "title": "Backlinks for 2026-04-18-the-last-question"
             }
           },
           {
@@ -202,7 +202,7 @@
   "active": "1896d1a370a069dd",
   "lastOpenFiles": [
     "posts/Untitled.md",
-    "posts/2026-03-18-the-last-question.md",
+    "posts/2026-04-18-the-last-question.md",
     "about.md",
     "posts/2030-01-01-template.md",
     "_templates/post-template.md",
