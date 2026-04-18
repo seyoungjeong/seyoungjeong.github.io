@@ -1,4 +1,7 @@
 {
   "vimMode": true,
-  "propertiesInDocument": "source"
+  "propertiesInDocument": "source",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "posts",
+  "attachmentFolderPath": "../static/images"
 }
