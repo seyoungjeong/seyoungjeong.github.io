@@ -4,7 +4,7 @@ date: 2026-02-27T14:40:00+09:00
 description: "cbvprintf_package가 %.*s 포맷의 precision을 무시하고 strlen()을 호출하여 heap-buffer-overflow가 발생하는 문제를 분석한 기록입니다."
 categories: ["Coding"]
 tags: ["Zephyr", "Open Source", "Bug Analysis", "Contributing"]
-draft: false
+draft: true
 ---
 
 ## 문제 요약

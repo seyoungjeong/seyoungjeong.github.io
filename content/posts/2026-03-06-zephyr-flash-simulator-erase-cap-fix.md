@@ -1,7 +1,7 @@
 ---
 title: "Fixing the Zephyr Flash Simulator Erase Capability Bug"
 date: 2026-03-06
-draft: false
+draft: true
 tags: ["zephyr", "flash", "bugfix"]
 ---
 

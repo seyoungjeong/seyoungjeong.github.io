@@ -1,7 +1,7 @@
 ---
 title: "Zephyr Flash Simulator Erase Capability Fix Plan"
 date: 2026-03-06
-draft: false
+draft: true
 tags: ["zephyr", "flash", "simulator"]
 ---
 
