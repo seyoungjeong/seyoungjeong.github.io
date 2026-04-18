@@ -1,0 +1,198 @@
+{
+  "main": {
+    "id": "33103ca03d731f7c",
+    "type": "split",
+    "children": [
+      {
+        "id": "561b310ca68d20af",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "967b9ec1ccb46abc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/2026-04-06-Study-LLM-plan.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-04-06-Study-LLM-plan"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2ee90cd6d0aa1762",
+    "type": "split",
+    "children": [
+      {
+        "id": "9b6774b66fba34bf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cb5b8096c2d209ef",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c5e8a7ebdc97f4b1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "ec9ff7b496dc159e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 255.5
+  },
+  "right": {
+    "id": "7619a386d039f46a",
+    "type": "split",
+    "children": [
+      {
+        "id": "d29b8da1e2e38064",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "04b316b0981cdffd",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "posts/2026-04-06-Study-LLM-plan.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2026-04-06-Study-LLM-plan"
+            }
+          },
+          {
+            "id": "51d42201384a95e6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "posts/2026-04-04-Study-LLM-spec.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2026-04-04-Study-LLM-spec"
+            }
+          },
+          {
+            "id": "016fefa2ff0b40af",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "3c5cb586e5ac0e7e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "2352b712e6b3892f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "posts/2026-04-04-Study-LLM-spec.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2026-04-04-Study-LLM-spec"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "967b9ec1ccb46abc",
+  "lastOpenFiles": [
+    "posts/2026-04-10-i-like-this-thought-from-patrickrhone-too.md",
+    "posts/2026-04-04-Study-LLM-spec.md",
+    "posts/2026-04-06-Study-LLM-plan.md",
+    "posts/2030-01-01-template.md",
+    "posts/2026-04-01-claude-code-leaked.md",
+    "posts/2026-02-28-zephyr-pre-commit-setup.md",
+    "posts/2026-02-27-zephyr-zms-free-space-test-fix.md",
+    "posts/2026-03-31-climate-damage-caused-by-us.md",
+    "about.md"
+  ]
+}
