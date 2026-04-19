@@ -23,12 +23,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/260419-card_from_kimys/index.md",
+                "file": "posts/260419-rm.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "260419-rm"
             }
           }
         ],
@@ -197,9 +197,10 @@
   },
   "active": "1896d1a370a069dd",
   "lastOpenFiles": [
+    "posts/260419-card_from_kimys/index.md",
+    "posts/260419-rm.md",
     "posts/260419-card_from_kimys/IMG_0052.jpg",
     "posts/260418-obsidian_as_blog_post_editor/index.md",
-    "posts/260419-card_from_kimys/index.md",
     "posts/260419-card_from_kimys",
     "content/posts/2026-04-18-obsidian-as-blog-post-editor/obsidian_for_blog_post.png",
     "content/posts/2026-04-18-obsidian-as-blog-post-editor/index.md",
@@ -216,7 +217,6 @@
     "content/posts/Screenshot 2026-04-18 at 8.59.09 PM 1.png",
     "public/posts/Screenshot 2026-04-18 at 8.59.09 PM.png",
     "content/posts/Screenshot 2026-04-18 at 8.59.09 PM.png",
-    "public/posts/${noteFileName}/Screenshot 2026-04-18 at 8.59.09 PM.png",
     "public/posts/${noteFileName}",
     "content/posts/${noteFileName}",
     "public/tags/블로깅/page/1/index.html",
