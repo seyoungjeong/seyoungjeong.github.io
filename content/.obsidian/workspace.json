@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/2026-04-18-obsidian-as-blog-post-editor/index.md",
+                "file": "posts/260418-obsidian_as_blog_post_editor/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -89,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 395.5,
-    "collapsed": true
+    "width": 395.5
   },
   "right": {
     "id": "7619a386d039f46a",
@@ -195,7 +194,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "1896d1a370a069dd",
+  "active": "cb5b8096c2d209ef",
   "lastOpenFiles": [
     "content/posts/2026-04-18-obsidian-as-blog-post-editor/obsidian_for_blog_post.png",
     "content/posts/2026-04-18-obsidian-as-blog-post-editor/index.md",
