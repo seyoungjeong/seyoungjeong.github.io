@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/260418-obsidian_as_blog_post_editor/index.md",
+                "file": "posts/260419-card_from_kimys/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -89,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 395.5
+    "width": 395.5,
+    "collapsed": true
   },
   "right": {
     "id": "7619a386d039f46a",
@@ -194,8 +195,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "cb5b8096c2d209ef",
+  "active": "1896d1a370a069dd",
   "lastOpenFiles": [
+    "posts/260419-card_from_kimys/IMG_0052.jpg",
+    "posts/260418-obsidian_as_blog_post_editor/index.md",
+    "posts/260419-card_from_kimys/index.md",
+    "posts/260419-card_from_kimys",
     "content/posts/2026-04-18-obsidian-as-blog-post-editor/obsidian_for_blog_post.png",
     "content/posts/2026-04-18-obsidian-as-blog-post-editor/index.md",
     "public/posts/2026-04-18-obsidian-as-blog-post-editor/Screenshot 2026-04-18 at 8.59.09 PM.png",
@@ -216,7 +221,6 @@
     "content/posts/${noteFileName}",
     "public/tags/블로깅/page/1/index.html",
     "public/tags/블로깅/page/1",
-    "public/tags/블로깅/page",
     "AGENTS.md",
     "CLAUDE.md",
     "content/posts/2026-04-18-the-last-question.md",
@@ -238,8 +242,6 @@
     "posts/2026-03-14-utah-ski-trip.md",
     "posts/2026-02-27-zephyr-cbvprintf-oob-read.md",
     "posts/2026-02-24-zephyr-coverity-code-unreachable.md",
-    "posts/2026-02-24-zephyr-qemu-guide.md",
-    "posts/2026-02-28-zephyr-pre-commit-setup.md",
-    "posts/2026-04-10-i-like-this-thought-from-patrickrhone-too.md"
+    "posts/2026-02-24-zephyr-qemu-guide.md"
   ]
 }
