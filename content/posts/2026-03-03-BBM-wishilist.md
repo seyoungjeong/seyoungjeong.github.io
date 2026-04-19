@@ -1,10 +1,15 @@
 ---
-title: "BMM Wishlist"
+title: BMM Wishlist
 date: 2026-03-03T19:00:00+09:00
-description: "Book, Movie, and Music wishlist"
-categories: ["BMM" ]
-tags: ["book", "movie", "music"]
-draft: false
+lastmod: 2026-04-20T04:29:39+09:00
+description: Book, Movie, and Music wishlist
+categories:
+  - BMM
+tags:
+  - book
+  - movie
+  - music
+draft: true
 ---
 
 - [ ] 우리들

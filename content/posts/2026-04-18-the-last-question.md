@@ -1,12 +1,18 @@
 ---
 title: The Last Qeustion by Issac Asimov
 date: 2026-04-18T18:30:59+09:00
-lastmod: 2026-04-18T20:03:58+09:00
-description: 아이작 아시모프의 최후의 질문
+lastmod: 2026-04-20T07:41:31+09:00
+description: 아이작 아시모프의 최후의 질문이라는 십분이면 읽을 수 있는 단편. 70년 전의 통찰.
 categories: []
 tags:
   - 책
 draft: false
 ---
 
-1956년에 쓰인 아이작 아시모프의 [The Last Question](https://hex.ooo/library/last_question.html)을 2026년에 읽다. 이게 70년 전에 쓰인 글이라고? 십분 남짓 길이의 단편에 우주의 소멸과 탄생에 대한 통찰을 담았다. Hacker News의 [댓글](https://news.ycombinator.com/item?id=47804965)을 읽는 재미는 덤.
+1956년에 쓰인 아이작 아시모프의 [The Last Question](https://hex.ooo/library/last_question.html)을 70년이 지난 2026년에 읽었다. 십분 남짓 길이의 단편에 우주의 소멸과 탄생에 대한 이야기를 담았고, 마지막에 문장에서는 '아!' 하는 탄성이 나온다.
+
+>고도의 기술 발전을 이룬 인류는 AC의 도움을 받아 빛의 속도로 항성 간을 여행할 수 있게 되었다. (AC, Analog Computer. 지능을 가진 컴퓨터). 영겹의 세월이 흘러 인간은 정신의 형태로 존재하게 되었지만, AC는 엔트로피의 방향을 되돌릴 수 있는 방법을 알지 못한다. 다시 영겁의 세월이 플로 별과 은하들은 소멸하고 우주는 검게 변해갔다. 인간이 소멸한지는 오래고, 물질과 에너지는 사라졌고 공간과 시간도 사라졌다. 마침내 AC는 엔트로피의 방향을 역전시키는 방법을 알게 되었다. 그리고 ....
+
+인공 지능이라는 말은 나오지 않지만 아이작 아시모프는 지능을 가진 컴퓨터를 상상했고, 그 이름을 AC라고 한 것도 흥미 롭다. (AC는 After Christ의 약자도 된다.) 현재 LLM(Large Language Model)의 출현과 화성으로 인간을 보내겠다는 것들을 보면(일론 머스크를 좋아하지 않지만) 대단한 통찰이었다.
+
+Hacker News의 [댓글](https://news.ycombinator.com/item?id=47804965)을 읽는 재미는 덤이다.
