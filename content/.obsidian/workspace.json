@@ -23,12 +23,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/2026-04-10-i-like-this-thought-from-patrickrhone-too.md",
+                "file": "posts/260419-over_engineering.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-10-i-like-this-thought-from-patrickrhone-too"
+              "title": "260419-over_engineering"
             }
           }
         ],
@@ -197,6 +197,8 @@
   },
   "active": "1896d1a370a069dd",
   "lastOpenFiles": [
+    "posts/2026-04-10-i-like-this-thought-from-patrickrhone-too.md",
+    "posts/260419-over_engineering.md",
     "posts/260419-rm.md",
     "posts/260419-card_from_kimys/index.md",
     "posts/260419-card_from_kimys/IMG_0052.jpg",
@@ -240,8 +242,6 @@
     "posts/2026-03-06-zephyr-flash-simulator-erase-cap-fix.md",
     "posts/2026-03-06-zephyr-flash-simulator-erase-cap-fix-plan.md",
     "posts/2026-03-14-utah-ski-trip.md",
-    "posts/2026-02-27-zephyr-cbvprintf-oob-read.md",
-    "posts/2026-02-24-zephyr-coverity-code-unreachable.md",
-    "posts/2026-02-24-zephyr-qemu-guide.md"
+    "posts/2026-02-27-zephyr-cbvprintf-oob-read.md"
   ]
 }
