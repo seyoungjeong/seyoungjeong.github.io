@@ -3,5 +3,9 @@
   "propertiesInDocument": "source",
   "newFileLocation": "folder",
   "newFileFolderPath": "posts",
-  "attachmentFolderPath": "../static/images"
+  "attachmentFolderPath": "./",
+  "showLineNumber": true,
+  "useMarkdownLinks": true,
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "relative"
 }
