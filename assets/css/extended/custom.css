@@ -180,7 +180,7 @@ pre code,
     justify-content: center;
     background: var(--tertiary) !important;
     /* matches dark black-green */
-    border: 1px solid #6c8cff !important;
+    border: none !important;
     /* sharp green border */
     border-radius: 4px;
     color: #6c8cff !important;
@@ -198,6 +198,11 @@ pre:hover .copy-code {
     background: var(--entry) !important;
     color: #94b2ff !important;
     box-shadow: 0 0 8px rgba(108, 140, 255, 0.4);
+}
+
+.copy-code:focus,
+.copy-code:active {
+    outline: none !important;
 }
 
 /* Custom Top Meta styling */
