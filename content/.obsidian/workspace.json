@@ -186,6 +186,7 @@
   },
   "active": "1896d1a370a069dd",
   "lastOpenFiles": [
+    "_templates/_index.md",
     "posts/2026-04-04-Study-LLM-spec.md",
     "posts/2026-02-24-zephyr-qemu-guide.md",
     "posts/2026-02-22-2019-blizzard-brahma-88-review.md",
@@ -230,7 +231,6 @@
     "posts/2026-04-18-after-vibe-coding.md",
     "posts/2026-04-18-obsidian-as-post-editor.md",
     "posts/2030-01-01-template.md",
-    "_templates/post-template.md",
-    "posts/2026-04-18.md.md"
+    "_templates/post-template.md"
   ]
 }
