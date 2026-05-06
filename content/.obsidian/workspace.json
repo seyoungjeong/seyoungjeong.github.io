@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/260506-hollys-dalmaji.md",
+                "file": "posts/260507-my-mobile-setup/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "260506-hollys-dalmaji"
+              "title": "index"
             }
           }
         ],
@@ -200,8 +200,12 @@
   },
   "active": "c1e9e6ce4575c0a4",
   "lastOpenFiles": [
-    "posts/260506-myfavoritebottle.md",
+    "posts/260418-obsidian_as_blog_post_editor/index.md",
+    "posts/260507-my-mobile-setup/index.md",
+    "posts/260507-my-mobile-setup/IMG_0158.jpg",
+    "posts/260507-my-mobile-setup",
     "posts/260506-hollys-dalmaji.md",
+    "posts/260506-myfavoritebottle.md",
     "posts/260505-den-busan.md",
     "posts/260505-coffee-bean-costco-korea.md",
     "posts/260503-the-supreme-court-is-corrupt.md",
@@ -223,12 +227,9 @@
     "posts/2026-03-18-adult.md.md",
     "posts/2026-03-03-BBM-wishilist.md",
     "posts/260419-rm.md",
-    "posts/260419-card_from_kimys/index.md",
     "posts/260419-card_from_kimys/IMG_0052.jpg",
-    "posts/260418-obsidian_as_blog_post_editor/index.md",
     "posts/260419-card_from_kimys",
     "content/posts/2026-04-18-obsidian-as-blog-post-editor/obsidian_for_blog_post.png",
-    "content/posts/2026-04-18-obsidian-as-blog-post-editor/index.md",
     "public/posts/2026-04-18-obsidian-as-blog-post-editor/Screenshot 2026-04-18 at 8.59.09 PM.png",
     "content/posts/2026-04-18-obsidian-as-blog-post-editor/Screenshot 2026-04-18 at 8.59.09 PM.png",
     "public/posts/2026-04-18-obsidian-as-blog-post-editor/index.html",
@@ -241,10 +242,8 @@
     "public/posts/Screenshot 2026-04-18 at 8.59.09 PM 1.png",
     "content/posts/Screenshot 2026-04-18 at 8.59.09 PM 1.png",
     "public/posts/Screenshot 2026-04-18 at 8.59.09 PM.png",
-    "content/posts/Screenshot 2026-04-18 at 8.59.09 PM.png",
     "public/posts/${noteFileName}",
     "content/posts/${noteFileName}",
-    "public/tags/블로깅/page/1/index.html",
-    "public/tags/블로깅/page/1"
+    "public/tags/블로깅/page/1/index.html"
   ]
 }
