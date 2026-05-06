@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "2026-03-31-climate-damage-caused-by-us"
             }
+          },
+          {
+            "id": "c1e9e6ce4575c0a4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/260505-den-busan.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "260505-den-busan"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 299.5,
-    "collapsed": true
+    "width": 299.5
   },
   "right": {
     "id": "7619a386d039f46a",
@@ -184,8 +198,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "1896d1a370a069dd",
+  "active": "c1e9e6ce4575c0a4",
   "lastOpenFiles": [
+    "posts/260506-myfavoritebottle.md",
+    "posts/260505-den-busan.md",
+    "posts/260505-coffee-bean-costco-korea.md",
+    "posts/260503-the-supreme-court-is-corrupt.md",
+    "posts/260501-mosoon-yangkj.md",
+    "posts/2026-03-31-climate-damage-caused-by-us.md",
     "posts/260410-i_like_this_thought_from_patrickrhone_too.md",
     "posts/260421-only_one_life_by_kimyoungha.md",
     "_templates/_index.md",
@@ -225,12 +245,6 @@
     "content/posts/${noteFileName}",
     "public/tags/블로깅/page/1/index.html",
     "public/tags/블로깅/page/1",
-    "AGENTS.md",
-    "CLAUDE.md",
-    "content/posts/2026-04-18-the-last-question.md",
-    "posts/2026-04-18-after-vibe-coding.md",
-    "posts/2026-04-18-obsidian-as-post-editor.md",
-    "posts/2030-01-01-template.md",
-    "_templates/post-template.md"
+    "AGENTS.md"
   ]
 }
