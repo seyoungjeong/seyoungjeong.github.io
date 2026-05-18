@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/260507-my-mobile-setup/index.md",
+                "file": "posts/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Untitled"
+            }
+          },
+          {
+            "id": "b16ba332457e18c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/260518-migrate-from-logseq-to-obsidian.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "260518-migrate-from-logseq-to-obsidian"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -199,10 +213,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "c1e9e6ce4575c0a4",
+  "active": "b16ba332457e18c1",
   "lastOpenFiles": [
-    "posts/260418-obsidian_as_blog_post_editor/index.md",
+    "posts/Untitled.md",
+    "posts/260518-migrate-from-logseq-to-obsidian.md",
     "posts/260507-my-mobile-setup/index.md",
+    "posts/260418-obsidian_as_blog_post_editor/index.md",
     "posts/260507-my-mobile-setup/IMG_0158.jpg",
     "posts/260507-my-mobile-setup",
     "posts/260506-hollys-dalmaji.md",
@@ -218,7 +234,6 @@
     "posts/2026-04-04-Study-LLM-spec.md",
     "posts/2026-02-24-zephyr-qemu-guide.md",
     "posts/2026-02-22-2019-blizzard-brahma-88-review.md",
-    "posts/Untitled.md",
     "posts/260419-over_engineering.md",
     "about.md",
     "posts/2026-04-18-the-last-question.md",
