@@ -11,7 +11,7 @@ tags:
   - Mac
   - Apple Silicon
 draft: true
-lastmod: 2026-04-21T13:22:17+09:00
+lastmod: 2026-05-18T17:57:06+09:00
 ---
 
 In this post, we will explore how to set up the Zephyr RTOS development environment on a Mac (Apple Silicon, M1/M2/M3/M4), and how to build and test applications using the QEMU emulator without actual board hardware.

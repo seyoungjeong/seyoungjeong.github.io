@@ -7,7 +7,8 @@ categories:
 tags:
   - LLM
   - AI
-draft: false
+draft: true
+lastmod: 2026-05-18T17:58:19+09:00
 ---
 지난 몇일 동안 Claude Code를 사용해서 GitHub PR들을 만들어 왔는데, 그 중 두 개:
 

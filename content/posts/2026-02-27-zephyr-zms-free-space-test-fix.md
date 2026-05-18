@@ -1,10 +1,16 @@
 ---
 title: "Zephyr RTOS: ZMS free space 테스트 assertion 실패 수정"
 date: 2026-02-27T13:40:00+09:00
-description: "ZMS test_zms_free_space 테스트가 write_block_size에 따른 ATE 정렬 패딩을 고려하지 않아 발생하는 assertion 실패를 수정한 기록입니다."
-categories: ["Coding"]
-tags: ["Zephyr", "Open Source", "Bug Fix", "Contributing"]
-draft: false
+description: ZMS test_zms_free_space 테스트가 write_block_size에 따른 ATE 정렬 패딩을 고려하지 않아 발생하는 assertion 실패를 수정한 기록입니다.
+categories:
+  - Coding
+tags:
+  - Zephyr
+  - Open Source
+  - Bug Fix
+  - Contributing
+draft: true
+lastmod: 2026-05-18T17:57:24+09:00
 ---
 
 ## 문제 요약

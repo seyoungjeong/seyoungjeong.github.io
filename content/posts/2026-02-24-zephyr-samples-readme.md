@@ -1,10 +1,16 @@
 ---
 title: "Zephyr RTOS: README 누락 샘플 문서화 기여"
 date: 2026-02-24T12:50:00+09:00
-description: "Zephyr 프로젝트에서 README가 누락된 5개 샘플에 대한 문서를 작성하고 PR을 제출한 기록입니다."
-categories: ["Coding"]
-tags: ["Zephyr", "Open Source", "Documentation", "Contributing"]
-draft: false
+description: Zephyr 프로젝트에서 README가 누락된 5개 샘플에 대한 문서를 작성하고 PR을 제출한 기록입니다.
+categories:
+  - Coding
+tags:
+  - Zephyr
+  - Open Source
+  - Documentation
+  - Contributing
+draft: true
+lastmod: 2026-05-18T17:57:15+09:00
 ---
 
 ## 문제 요약

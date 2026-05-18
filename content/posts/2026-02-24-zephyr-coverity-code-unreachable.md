@@ -1,10 +1,17 @@
 ---
 title: "Zephyr RTOS: CODE_UNREACHABLE 매크로의 Coverity Dead Code 오탐 분석"
 date: 2026-02-24T12:00:00+09:00
-description: "Zephyr의 CODE_UNREACHABLE 매크로에서 발생하는 Coverity dead code false positive 문제를 분석하고 해결 방안을 제시합니다."
-categories: ["Coding"]
-tags: ["Zephyr", "Coverity", "Static Analysis", "C Preprocessor", "Open Source"]
-draft: false
+description: Zephyr의 CODE_UNREACHABLE 매크로에서 발생하는 Coverity dead code false positive 문제를 분석하고 해결 방안을 제시합니다.
+categories:
+  - Coding
+tags:
+  - Zephyr
+  - Coverity
+  - Static Analysis
+  - C Preprocessor
+  - Open Source
+draft: true
+lastmod: 2026-05-18T17:56:52+09:00
 ---
 
 ## 문제 요약

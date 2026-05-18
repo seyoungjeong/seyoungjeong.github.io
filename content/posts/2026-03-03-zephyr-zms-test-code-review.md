@@ -1,10 +1,16 @@
 ---
 title: "Zephyr RTOS: ZMS free space 테스트 코드 리뷰 및 개선"
 date: 2026-03-03T19:00:00+09:00
-description: "ZMS free space 테스트의 코드 품질 문제(magic number, 변수 명명, 매크로 스코프, O(N²) 성능)를 발견하고 수정한 기록."
-categories: ["Coding"]
-tags: ["Zephyr", "Open Source", "Code Review", "Contributing"]
-draft: false
+description: ZMS free space 테스트의 코드 품질 문제(magic number, 변수 명명, 매크로 스코프, O(N²) 성능)를 발견하고 수정한 기록.
+categories:
+  - Coding
+tags:
+  - Zephyr
+  - Open Source
+  - Code Review
+  - Contributing
+draft: true
+lastmod: 2026-05-18T17:57:49+09:00
 ---
 
 PR [#104644](https://github.com/zephyrproject-rtos/zephyr/pull/104644) 리뷰 과정에서 발견한 코드 품질 문제들과 수정 내용.
