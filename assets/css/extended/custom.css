@@ -325,6 +325,11 @@ pre:hover .copy-code {
     font-size: 14px !important;
 }
 
+/* Faded footer */
+.footer {
+    opacity: 0.4;
+}
+
 /* Pagination buttons match body text */
 .pagination a {
     background: transparent !important;
