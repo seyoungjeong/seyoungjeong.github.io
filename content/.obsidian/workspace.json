@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/2026-03-21-LLM-PR-Guidelines.md",
+                "file": "about.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-21-LLM-PR-Guidelines"
+              "title": "about"
             }
           }
         ],
@@ -107,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 299.5
+    "width": 299.5,
+    "collapsed": true
   },
   "right": {
     "id": "7619a386d039f46a",
@@ -214,8 +215,8 @@
   },
   "active": "b16ba332457e18c1",
   "lastOpenFiles": [
-    "posts/2026-03-26-consider-new-iphone.md",
     "posts/2026-03-21-LLM-PR-Guidelines.md",
+    "posts/2026-03-26-consider-new-iphone.md",
     "posts/2026-03-16-movie-perfect-days.md",
     "posts/2026-03-06-zephyr-flash-simulator-erase-cap-fix-plan.md",
     "posts/2026-03-06-zephyr-flash-simulator-erase-cap-fix.md",
