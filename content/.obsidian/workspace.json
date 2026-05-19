@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about.md",
+                "file": "posts/260509-tank-day-of-korean-sb.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "about"
+              "title": "260509-tank-day-of-korean-sb"
             }
           }
         ],
@@ -215,6 +215,9 @@
   },
   "active": "b16ba332457e18c1",
   "lastOpenFiles": [
+    "posts/2026-02-20-myoko-suginohara-ski-trip.md",
+    "posts/260509-tank-day-of-korean-sb.md",
+    "about.md",
     "posts/2026-03-21-LLM-PR-Guidelines.md",
     "posts/2026-03-26-consider-new-iphone.md",
     "posts/2026-03-16-movie-perfect-days.md",
@@ -240,9 +243,6 @@
     "posts/260507-my-mobile-setup",
     "posts/260506-hollys-dalmaji.md",
     "posts/260506-myfavoritebottle.md",
-    "posts/260505-den-busan.md",
-    "posts/260505-coffee-bean-costco-korea.md",
-    "posts/260503-the-supreme-court-is-corrupt.md",
     "posts/260419-card_from_kimys/IMG_0052.jpg",
     "posts/260419-card_from_kimys",
     "content/posts/2026-04-18-obsidian-as-blog-post-editor/obsidian_for_blog_post.png",
