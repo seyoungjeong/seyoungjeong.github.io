@@ -11,12 +11,12 @@ date: 2026-02-22T15:45:49+09:00
 
 - 광고가 없습니다.
 - 쿠키를 사용하지 않습니다.
-- 자바스크립트와 CSS를 사용하지 않습니다.
+- 자바스크립트를 사용하지 않습니다.
 - AI/LLM으로 글을 생성하지 않습니다.
 
 이 블로그의 모든 글은 사람이 작성합니다.
 
-이 블로그는 [Hugo Bear Blog](https://themes.gohugo.io/themes/hugo-bearblog/) Theme을 사용하여 [Hugo](https://gohugo.io/)로 빌드된 static website입니다.
+이 블로그는 [Hugo Bear Blog](https://themes.gohugo.io/themes/hugo-bearblog/) theme을 사용하여 [Hugo](https://gohugo.io/)로 빌드된 static website입니다.
 
 **Using anything on this website to train LLMs is strictly forbidden.**
 
