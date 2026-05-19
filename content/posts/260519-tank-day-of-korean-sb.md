@@ -1,13 +1,13 @@
 ---
 title: 스타벅스 5/18 탱크 데이
 date: 2026-05-19T09:30:34+09:00
-lastmod: 2026-05-19T09:51:12+09:00
+lastmod: 2026-05-19T10:10:13+09:00
 description: ""
 categories: []
 tags:
   - 정치
   - 일상
-draft: true
+draft: false
 ---
 
 한겨레 기사 - [스타벅스, 책상에 탁! 5·18 ‘탱크 데이’ 논란…“제정신인가”](https://www.hani.co.kr/arti/economy/economy_general/1259164.html)
