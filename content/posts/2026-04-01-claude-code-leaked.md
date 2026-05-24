@@ -6,7 +6,8 @@ categories:
   - Coding
 tags:
   - Claude
-draft: false
+draft: true
+lastmod: 2026-05-25T07:26:07+09:00
 ---
 아마 한국 시간 3/31일 밤일 듯 한데, [Anthropic의 Claude Code version 2.1.88 릴리즈에 59.8MB의 JS source map file이 포함되어 배포 되는 사고](https://www.theregister.com/2026/03/31/anthropic_claude_code_source_code/)(의도했을리는 없으므로 사고로 봐야)가 발생했다.
 
