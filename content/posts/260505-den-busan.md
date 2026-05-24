@@ -1,11 +1,11 @@
 ---
 title: 부산 광안리 이자카야 덴(Den)
 date: 2026-05-05T16:02:50+09:00
-lastmod: 2026-05-06T15:42:24+09:00
+lastmod: 2026-05-24T10:45:29+09:00
 description: 고등어 초밥이 맛 있는 곳
 categories: []
 tags:
-  - 음식
+  - 음식점
   - 부산
 draft: false
 ---
