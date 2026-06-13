@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/2026-04-01-claude-code-leaked.md",
+                "file": "posts/260613-spacex-ipo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-01-claude-code-leaked"
+              "title": "260613-spacex-ipo"
             }
           },
           {
@@ -228,13 +228,17 @@
   },
   "active": "91030285a500f337",
   "lastOpenFiles": [
+    "posts/260613-wild-thing-true-education.md",
+    "posts/260613-spacex-ipo.md",
+    "posts/Untitled.md",
+    "posts/260612-remove-instagram.md",
+    "posts/2026-04-01-claude-code-leaked.md",
     "posts/260524-taeyoung-coffee-busan.md",
     "posts/260501-mosoon-yangkj.md",
     "posts/260506-myfavoritebottle.md",
     "posts/260505-coffee-bean-costco-korea.md",
     "posts/260505-den-busan.md",
     "posts/260506-hollys-dalmaji.md",
-    "posts/Untitled.md",
     "posts/260523-niseko-ski-trip-2024.md",
     "posts/260522-memory-in-Roosevelt-Island.md",
     "posts/260519-tank-day-of-korean-sb.md",
@@ -252,10 +256,6 @@
     "posts/2026-03-06-zephyr-flash-simulator-erase-cap-fix.md",
     "posts/2026-03-03-zephyr-zms-test-code-review.md",
     "posts/2026-03-03-BBM-wishilist.md",
-    "posts/2026-03-01-counselnote-project.md",
-    "posts/2026-02-28-zephyr-pre-commit-setup.md",
-    "posts/2026-02-27-zephyr-zms-free-space-test-fix.md",
-    "posts/2026-02-27-zephyr-cbvprintf-oob-read.md",
     "posts/260507-my-mobile-setup/IMG_0158.jpg",
     "posts/260507-my-mobile-setup",
     "posts/260419-card_from_kimys/IMG_0052.jpg",
