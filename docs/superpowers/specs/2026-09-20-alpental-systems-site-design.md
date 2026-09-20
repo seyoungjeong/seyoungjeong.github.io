@@ -92,8 +92,8 @@ Single scrolling page, anchor nav: 소개 / 서비스 / 기술 스택 / 경력 /
 
 **Hero**
 - H1: "임베디드 시스템을 위한 토탈 엔지니어링 솔루션"
-- Subline: "스마트폰부터 위성 비행 컴퓨터까지, 20년 이상의 실전 경험을
-  기반으로 한 임베디드 엔지니어링 전문 기업입니다."
+- Subline: "스마트폰부터 위성 비행 컴퓨터까지, 미국 빅테크 경험을 포함해
+  20년 이상의 실전 경험을 기반으로 한 임베디드 엔지니어링 전문 기업입니다."
 - CTA button → scrolls to 문의, label "문의하기"
 
 **소개 (About)**
@@ -127,13 +127,14 @@ Android, ROS/ROS2, I2C, SPI, UART, USB, PCIe, CAN
 chronological order; public career history, matching what the owner already
 discloses on their resume:
 
-- Amazon — Project Kuiper 위성 비행 컴퓨터 시스템, Prime Air 드론 배터리
-  관리 및 비행 제어 시스템, 보안 부트로더 개발
-- Microsoft — IEEE 802.11mc 기반 실내 측위 시스템, Windows 디바이스
-  드라이버(KMDF/UMDF) 개발
-- Qualcomm — 802.11ad WLAN 전력 최적화, PCIe 드라이버 개발, 저전력 Wi-Fi
-  펌웨어 설계
-- Samsung Electronics — 스마트폰 플랫폼 소프트웨어 개발 (Android)
+- Amazon (시애틀, 미국) — Project Kuiper 위성 비행 컴퓨터 시스템, Prime Air
+  드론 배터리 관리 및 비행 제어 시스템, 보안 부트로더 개발
+- Microsoft (시애틀, 미국) — IEEE 802.11mc 기반 실내 측위 시스템, Windows
+  디바이스 드라이버(KMDF/UMDF) 개발
+- Qualcomm (샌디에이고, 미국) — 802.11ad WLAN 전력 최적화, PCIe 드라이버
+  개발, 저전력 Wi-Fi 펌웨어 설계
+- Samsung Electronics (수원, 대한민국) — 스마트폰 플랫폼 소프트웨어 개발
+  (Android)
 
 **문의 (Contact)**
 - "프로젝트 문의는 이메일로 연락해 주세요."
