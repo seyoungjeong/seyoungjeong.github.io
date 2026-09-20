@@ -99,7 +99,7 @@ Single scrolling page, anchor nav: 소개 / 서비스 / 기술 스택 / 경력 /
 **소개 (About)**
 > 알펜탈 시스템즈는 임베디드 펌웨어, RTOS, 디바이스 드라이버 분야에서 20년
 > 이상의 실무 경험을 바탕으로 설립된 엔지니어링 기업입니다. 스마트폰
-> 플랫폼(Android, Windows CE)부터 위성 비행 컴퓨터 시스템, 드론 배터리
+> 플랫폼(Android)부터 위성 비행 컴퓨터 시스템, 드론 배터리
 > 관리 시스템, 무선 통신 전력 최적화까지 항공우주와 소비자 가전을 아우르는
 > 다양한 프로젝트를 수행해 왔습니다.
 >
@@ -121,7 +121,7 @@ Single scrolling page, anchor nav: 소개 / 서비스 / 기술 스택 / 경력 /
 avoid over-structuring a short list):
 
 C, C++, Python, Java, C#, AWS, Zephyr RTOS, RIOT-OS, Embedded Linux (Yocto),
-Android, Windows CE, ROS/ROS2, I2C, SPI, UART, USB, PCIe, CAN
+Android, ROS/ROS2, I2C, SPI, UART, USB, PCIe, CAN
 
 **경력 (Track record)** — company/period, 1-2 line summary each, in reverse
 chronological order; public career history, matching what the owner already
@@ -133,7 +133,7 @@ discloses on their resume:
   드라이버(KMDF/UMDF) 개발
 - Qualcomm — 802.11ad WLAN 전력 최적화, PCIe 드라이버 개발, 저전력 Wi-Fi
   펌웨어 설계
-- Samsung Electronics — 스마트폰 플랫폼 소프트웨어 개발 (Android, Windows CE)
+- Samsung Electronics — 스마트폰 플랫폼 소프트웨어 개발 (Android)
 
 **문의 (Contact)**
 - "프로젝트 문의는 이메일로 연락해 주세요."

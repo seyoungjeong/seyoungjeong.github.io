@@ -212,7 +212,7 @@ Create `layouts/index.html`:
     <section id="about" class="section">
       <div class="container">
         <h2>소개</h2>
-        <p>알펜탈 시스템즈는 임베디드 펌웨어, RTOS, 디바이스 드라이버 분야에서 20년 이상의 실무 경험을 바탕으로 설립된 엔지니어링 기업입니다. 스마트폰 플랫폼(Android, Windows CE)부터 위성 비행 컴퓨터 시스템, 드론 배터리 관리 시스템, 무선 통신 전력 최적화까지 항공우주와 소비자 가전을 아우르는 다양한 프로젝트를 수행해 왔습니다.</p>
+        <p>알펜탈 시스템즈는 임베디드 펌웨어, RTOS, 디바이스 드라이버 분야에서 20년 이상의 실무 경험을 바탕으로 설립된 엔지니어링 기업입니다. 스마트폰 플랫폼(Android)부터 위성 비행 컴퓨터 시스템, 드론 배터리 관리 시스템, 무선 통신 전력 최적화까지 항공우주와 소비자 가전을 아우르는 다양한 프로젝트를 수행해 왔습니다.</p>
         <p>시스템 브링업부터 양산 배포까지 전 과정을 책임지는 실전 중심의 솔루션을 제공합니다.</p>
       </div>
     </section>
@@ -271,7 +271,6 @@ Create `layouts/index.html`:
           <li>RIOT-OS</li>
           <li>Embedded Linux (Yocto)</li>
           <li>Android</li>
-          <li>Windows CE</li>
           <li>ROS/ROS2</li>
           <li>I2C</li>
           <li>SPI</li>
@@ -301,7 +300,7 @@ Create `layouts/index.html`:
           </li>
           <li>
             <h3>Samsung Electronics</h3>
-            <p>스마트폰 플랫폼 소프트웨어 개발 (Android, Windows CE)</p>
+            <p>스마트폰 플랫폼 소프트웨어 개발 (Android)</p>
           </li>
         </ul>
       </div>
