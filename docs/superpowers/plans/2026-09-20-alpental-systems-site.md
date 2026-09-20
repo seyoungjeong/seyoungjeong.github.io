@@ -151,11 +151,18 @@ Create `hugo.toml`:
 baseURL = "https://alpentalsystems.com/"
 languageCode = "ko-KR"
 title = "알펜탈 시스템즈"
+disableKinds = ["taxonomy", "term"]
 
 [params]
   tagline = "임베디드 시스템을 위한 토탈 엔지니어링 솔루션"
   contactEmail = "contact@alpentalsystems.com"
 ```
+
+`disableKinds` prevents Hugo's default category/tag taxonomy generation,
+which this single-page site has no content for; without it, `hugo` emits
+a "found no layout file for kind taxonomy" warning even though the build
+still succeeds. Confirmed by a prior review's isolated test: adding this
+line drops the page count from 5 to 3 and removes that warning.
 
 - [ ] **Step 2: Write the head partial**
 
