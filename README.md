@@ -1,15 +1,12 @@
-# seyoungjeong.github.io
+# alpentalsystems.com
 
-This is the repository for my personal blog.
+Hugo site for Alpental Systems (알펜탈 시스템즈), built and deployed by
+Cloudflare Pages (`hugo` build command, `public/` output).
 
-## Content Creation
+## Local preview
 
-I use **Obsidian** to create and edit posts. 
+    hugo server -D
 
-To ensure the best writing experience and use the configured settings:
+## Production build
 
-1. Open this `./content` folder directly in Obsidian.
-2. Insert template to add proper header.
-
-The folder contains settings configured for a **minimal focus mode**.
-You can toggle this focus mode on and off by pressing `Shift` + `Ctrl` + `F` in Obsidian.
+    hugo
