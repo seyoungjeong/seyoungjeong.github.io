@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+{{ partial "head.html" . }}
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#top">알펜탈 시스템즈</a>
+      <nav class="nav">
+        <a href="#about">소개</a>
+        <a href="#services">서비스</a>
+        <a href="#tech-stack">기술 스택</a>
+        <a href="#track-record">경력</a>
+        <a href="#contact">문의</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <h1>{{ .Site.Params.tagline }}</h1>
+        <p class="hero-sub">스마트폰부터 위성 비행 컴퓨터까지, 20년 이상의 실전 경험을 기반으로 한 임베디드 엔지니어링 전문 기업입니다.</p>
+        <a class="cta" href="#contact">문의하기</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>소개</h2>
+        <p>알펜탈 시스템즈는 임베디드 펌웨어, RTOS, 디바이스 드라이버 분야에서 20년 이상의 실무 경험을 바탕으로 설립된 엔지니어링 기업입니다. 스마트폰 플랫폼(Android, Windows CE)부터 위성 비행 컴퓨터 시스템, 드론 배터리 관리 시스템, 무선 통신 전력 최적화까지 항공우주와 소비자 가전을 아우르는 다양한 프로젝트를 수행해 왔습니다.</p>
+        <p>시스템 브링업부터 양산 배포까지 전 과정을 책임지는 실전 중심의 솔루션을 제공합니다.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section alt">
+      <div class="container">
+        <h2>서비스</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>RTOS·펌웨어 개발</h3>
+            <p>Zephyr, RIOT-OS 등 오픈소스 RTOS 기반의 펌웨어 설계 및 구현</p>
+          </div>
+          <div class="card">
+            <h3>디바이스 드라이버 개발</h3>
+            <p>I2C, SPI, UART, USB, PCIe, CAN 등 다양한 인터페이스 드라이버 개발</p>
+          </div>
+          <div class="card">
+            <h3>시스템 브링업 &amp; 트러블슈팅</h3>
+            <p>SoC/FPGA 플랫폼의 초기 부팅 및 하드웨어 통합 문제 해결</p>
+          </div>
+          <div class="card">
+            <h3>보안 부트로더 &amp; 인증</h3>
+            <p>안전한 부트로더 설계 및 인증 메커니즘 구현</p>
+          </div>
+          <div class="card">
+            <h3>전력 최적화 &amp; 성능 분석</h3>
+            <p>저전력 설계 및 시스템 성능 프로파일링</p>
+          </div>
+          <div class="card">
+            <h3>CI/CD &amp; 테스트 인프라</h3>
+            <p>임베디드 플랫폼을 위한 빌드 자동화 및 테스트 인프라 구축</p>
+          </div>
+          <div class="card">
+            <h3>임베디드 리눅스 (Yocto)</h3>
+            <p>Yocto Project 기반 커스텀 리눅스 배포판 구축 및 BSP 개발</p>
+          </div>
+          <div class="card">
+            <h3>로봇 소프트웨어 (ROS)</h3>
+            <p>ROS/ROS2 기반 로봇 소프트웨어 설계 및 시스템 통합</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech-stack" class="section">
+      <div class="container">
+        <h2>기술 스택</h2>
+        <ul class="tags">
+          <li>C</li>
+          <li>C++</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>C#</li>
+          <li>AWS</li>
+          <li>Zephyr RTOS</li>
+          <li>RIOT-OS</li>
+          <li>Embedded Linux (Yocto)</li>
+          <li>Android</li>
+          <li>Windows CE</li>
+          <li>ROS/ROS2</li>
+          <li>I2C</li>
+          <li>SPI</li>
+          <li>UART</li>
+          <li>USB</li>
+          <li>PCIe</li>
+          <li>CAN</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="track-record" class="section alt">
+      <div class="container">
+        <h2>경력</h2>
+        <ul class="timeline">
+          <li>
+            <h3>Amazon</h3>
+            <p>Project Kuiper 위성 비행 컴퓨터 시스템, Prime Air 드론 배터리 관리 및 비행 제어 시스템, 보안 부트로더 개발</p>
+          </li>
+          <li>
+            <h3>Microsoft</h3>
+            <p>IEEE 802.11mc 기반 실내 측위 시스템, Windows 디바이스 드라이버(KMDF/UMDF) 개발</p>
+          </li>
+          <li>
+            <h3>Qualcomm</h3>
+            <p>802.11ad WLAN 전력 최적화, PCIe 드라이버 개발, 저전력 Wi-Fi 펌웨어 설계</p>
+          </li>
+          <li>
+            <h3>Samsung Electronics</h3>
+            <p>스마트폰 플랫폼 소프트웨어 개발 (Android, Windows CE)</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>문의</h2>
+        <p>프로젝트 문의는 이메일로 연락해 주세요.</p>
+        <a class="cta" href="mailto:{{ .Site.Params.contactEmail }}">{{ .Site.Params.contactEmail }}</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Alpental Systems. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
