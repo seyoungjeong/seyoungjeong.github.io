@@ -84,7 +84,7 @@ added later if requested).
 
 ## Page structure and copy (Korean)
 
-Single scrolling page, anchor nav: 소개 / 서비스 / 경력 / 문의.
+Single scrolling page, anchor nav: 소개 / 서비스 / 기술 스택 / 경력 / 문의.
 
 **Header**
 - Wordmark: "알펜탈 시스템즈"
@@ -92,19 +92,19 @@ Single scrolling page, anchor nav: 소개 / 서비스 / 경력 / 문의.
 
 **Hero**
 - H1: "임베디드 시스템을 위한 토탈 엔지니어링 솔루션"
-- Subline: "위성 비행 컴퓨터부터 저전력 무선 시스템까지, 10년 이상의 실전
-  경험을 기반으로 한 임베디드 엔지니어링 전문 기업입니다."
+- Subline: "스마트폰부터 위성 비행 컴퓨터까지, 20년 이상의 실전 경험을
+  기반으로 한 임베디드 엔지니어링 전문 기업입니다."
 - CTA button → scrolls to 문의, label "문의하기"
 
 **소개 (About)**
-> 알펜탈 시스템즈는 임베디드 펌웨어, RTOS, 디바이스 드라이버 분야에서 10년
-> 이상의 실무 경험을 바탕으로 설립된 엔지니어링 기업입니다. 위성 비행
-> 컴퓨터 시스템, 드론 배터리 관리 시스템, 무선 통신 전력 최적화 등
-> 항공우주와 소비자 가전을 아우르는 다양한 프로젝트를 수행해 왔습니다.
+> 알펜탈 시스템즈는 임베디드 펌웨어, RTOS, 디바이스 드라이버 분야에서 20년
+> 이상의 실무 경험을 바탕으로 설립된 엔지니어링 기업입니다. 스마트폰
+> 플랫폼(Android, Windows CE)부터 위성 비행 컴퓨터 시스템, 드론 배터리
+> 관리 시스템, 무선 통신 전력 최적화까지 항공우주와 소비자 가전을 아우르는
+> 다양한 프로젝트를 수행해 왔습니다.
 >
-> Zephyr RTOS, RIOT-OS 등 오픈소스 프로젝트에 대한 활발한 기여를 통해
-> 검증된 기술력을 보유하고 있으며, 시스템 브링업부터 양산 배포까지 전
-> 과정을 책임지는 실전 중심의 솔루션을 제공합니다.
+> 시스템 브링업부터 양산 배포까지 전 과정을 책임지는 실전 중심의 솔루션을
+> 제공합니다.
 
 **서비스 (Services)** — six cards, title + one-line description:
 
@@ -117,15 +117,23 @@ Single scrolling page, anchor nav: 소개 / 서비스 / 경력 / 문의.
 7. 임베디드 리눅스 (Yocto) — Yocto Project 기반 커스텀 리눅스 배포판 구축 및 BSP 개발
 8. 로봇 소프트웨어 (ROS) — ROS/ROS2 기반 로봇 소프트웨어 설계 및 시스템 통합
 
-**경력 (Track record)** — company/period, 1-2 line summary each; public
-career history, matching what the owner already discloses on their resume:
+**기술 스택 (Tech stack)** — flat tag list, no subgroups (single-page site,
+avoid over-structuring a short list):
+
+C, C++, Python, Java, C#, AWS, Zephyr RTOS, RIOT-OS, Embedded Linux (Yocto),
+Android, Windows CE, ROS/ROS2, I2C, SPI, UART, USB, PCIe, CAN
+
+**경력 (Track record)** — company/period, 1-2 line summary each, in reverse
+chronological order; public career history, matching what the owner already
+discloses on their resume:
 
 - Amazon — Project Kuiper 위성 비행 컴퓨터 시스템, Prime Air 드론 배터리
   관리 및 비행 제어 시스템, 보안 부트로더 개발
-- Qualcomm — 802.11ad WLAN 전력 최적화, PCIe 드라이버 개발, 저전력 Wi-Fi
-  펌웨어 설계
 - Microsoft — IEEE 802.11mc 기반 실내 측위 시스템, Windows 디바이스
   드라이버(KMDF/UMDF) 개발
+- Qualcomm — 802.11ad WLAN 전력 최적화, PCIe 드라이버 개발, 저전력 Wi-Fi
+  펌웨어 설계
+- Samsung Electronics — 스마트폰 플랫폼 소프트웨어 개발 (Android, Windows CE)
 
 **문의 (Contact)**
 - "프로젝트 문의는 이메일로 연락해 주세요."
