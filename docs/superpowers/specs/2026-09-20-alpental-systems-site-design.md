@@ -114,6 +114,8 @@ Single scrolling page, anchor nav: 소개 / 서비스 / 경력 / 문의.
 4. 보안 부트로더 & 인증 — 안전한 부트로더 설계 및 인증 메커니즘 구현
 5. 전력 최적화 & 성능 분석 — 저전력 설계 및 시스템 성능 프로파일링
 6. CI/CD & 테스트 인프라 — 임베디드 플랫폼을 위한 빌드 자동화 및 테스트 인프라 구축
+7. 임베디드 리눅스 (Yocto) — Yocto Project 기반 커스텀 리눅스 배포판 구축 및 BSP 개발
+8. 로봇 소프트웨어 (ROS) — ROS/ROS2 기반 로봇 소프트웨어 설계 및 시스템 통합
 
 **경력 (Track record)** — company/period, 1-2 line summary each; public
 career history, matching what the owner already discloses on their resume:
@@ -124,8 +126,6 @@ career history, matching what the owner already discloses on their resume:
   펌웨어 설계
 - Microsoft — IEEE 802.11mc 기반 실내 측위 시스템, Windows 디바이스
   드라이버(KMDF/UMDF) 개발
-- 오픈소스 기여 — Zephyr RTOS, RIOT-OS, llama.cpp에 다수의 머지된 기여
-  (github.com/seyoungjeong)
 
 **문의 (Contact)**
 - "프로젝트 문의는 이메일로 연락해 주세요."
@@ -143,9 +143,8 @@ blog's Pretendard). Mobile-responsive single column below ~768px.
 
 ## Manual steps for the owner (outside this repo/session)
 
-- Confirm Cloudflare Pages build command/output directory still match a
-  themeless Hugo build (`hugo --gc --minify`, output `public/`) — no
-  submodule init needed now that `themes/` is removed.
+- Cloudflare Pages build command is `hugo` (confirmed by owner), output
+  `public/` — no submodule init needed now that `themes/` is removed.
 - Confirm DNS for `alpentalsystems.com` points at Cloudflare (already done,
   per owner).
 - Set up `contact@alpentalsystems.com` mailbox if not already active.
@@ -156,7 +155,8 @@ blog's Pretendard). Mobile-responsive single column below ~768px.
 - Open in a browser via `claude-in-chrome` (or the local server) and check:
   layout at desktop and mobile widths, all anchor links scroll correctly,
   `mailto:` link is correct, no console errors.
-- `hugo --gc --minify` production build succeeds with no errors/warnings.
+- `hugo` production build (matching Cloudflare's build command) succeeds
+  with no errors/warnings.
 - `git log` / `git branch` confirm `blog-archive` exists and matches
   pre-migration `main`.
 
