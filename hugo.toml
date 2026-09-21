@@ -2,6 +2,7 @@ baseURL = "https://alpentalsystems.com/"
 languageCode = "ko-KR"
 title = "알펜탈 시스템즈"
 disableKinds = ["taxonomy", "term"]
+enableRobotsTXT = true
 
 [params]
   tagline = "임베디드 시스템을 위한 토탈 엔지니어링 솔루션"
