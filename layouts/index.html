@@ -7,6 +7,7 @@
       <a class="wordmark" href="#top">알펜탈 시스템즈</a>
       <nav class="nav">
         <a href="#about">소개</a>
+        <a href="#founder">설립자</a>
         <a href="#services">서비스</a>
         <a href="#tech-stack">기술 스택</a>
         <a href="#track-record">경력</a>
@@ -32,7 +33,25 @@
       </div>
     </section>
 
-    <section id="services" class="section alt">
+    <section id="founder" class="section alt">
+      <div class="container">
+        <h2>설립자</h2>
+        <div class="founder">
+          <h3>정석영 (Seo Jeong)</h3>
+          <p class="founder-title">설립자 · Principal Engineer</p>
+          <ul class="tags founder-badges">
+            <li>Amazon</li>
+            <li>Qualcomm</li>
+            <li>Microsoft</li>
+            <li>Samsung Electronics</li>
+          </ul>
+          <p>정석영은 Amazon, Qualcomm, Microsoft 등 미국 빅테크 기업에서 20년 이상 임베디드 소프트웨어 엔지니어로 활동하며, 위성 비행 컴퓨터 시스템, 드론 비행 제어 시스템, 무선 통신 전력 최적화 등 다양한 실전 프로젝트를 이끌어 왔습니다.</p>
+          <p>알펜탈 시스템즈는 이러한 현장 경험을 바탕으로 고객과 파트너가 믿고 맡길 수 있는 임베디드 엔지니어링 솔루션을 제공합니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
       <div class="container">
         <h2>서비스</h2>
         <div class="cards">
@@ -72,7 +91,7 @@
       </div>
     </section>
 
-    <section id="tech-stack" class="section">
+    <section id="tech-stack" class="section alt">
       <div class="container">
         <h2>기술 스택</h2>
         <ul class="tags">
@@ -97,31 +116,21 @@
       </div>
     </section>
 
-    <section id="track-record" class="section alt">
+    <section id="track-record" class="section">
       <div class="container">
         <h2>경력</h2>
         <ul class="timeline">
+          {{ range .Site.Params.trackRecord }}
           <li>
-            <h3>Amazon (시애틀, 미국)</h3>
-            <p>Project Kuiper 위성 비행 컴퓨터 시스템, Prime Air 드론 배터리 관리 및 비행 제어 시스템, 보안 부트로더 개발</p>
+            <h3>{{ .company }} ({{ .location }}){{ with .url }} <a href="{{ . }}" class="link-icon" target="_blank" rel="noopener">↗</a>{{ end }}</h3>
+            <p>{{ .description }}</p>
           </li>
-          <li>
-            <h3>Microsoft (시애틀, 미국)</h3>
-            <p>IEEE 802.11mc 기반 실내 측위 시스템, Windows 디바이스 드라이버(KMDF/UMDF) 개발</p>
-          </li>
-          <li>
-            <h3>Qualcomm (샌디에이고, 미국)</h3>
-            <p>802.11ad WLAN 전력 최적화, PCIe 드라이버 개발, 저전력 Wi-Fi 펌웨어 설계</p>
-          </li>
-          <li>
-            <h3>Samsung Electronics (수원, 대한민국)</h3>
-            <p>스마트폰 플랫폼 소프트웨어 개발 (Android)</p>
-          </li>
+          {{ end }}
         </ul>
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="contact" class="section alt">
       <div class="container">
         <h2>문의</h2>
         <p>프로젝트 문의는 이메일로 연락해 주세요.</p>

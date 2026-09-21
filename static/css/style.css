@@ -163,6 +163,35 @@ body {
   color: var(--color-text);
 }
 
+.founder h3 {
+  margin: 0 0 4px;
+  font-size: 1.2rem;
+}
+
+.founder-title {
+  margin: 0 0 16px;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.founder-badges {
+  margin-bottom: 20px;
+}
+
+.founder-badges li {
+  background: var(--color-bg);
+}
+
+.founder p {
+  max-width: 640px;
+}
+
+.link-icon {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
 .site-footer {
   padding: 32px 0;
   text-align: center;

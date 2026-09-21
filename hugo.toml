@@ -6,3 +6,27 @@ disableKinds = ["taxonomy", "term"]
 [params]
   tagline = "임베디드 시스템을 위한 토탈 엔지니어링 솔루션"
   contactEmail = "contact@alpentalsystems.com"
+
+[[params.trackRecord]]
+  company = "Amazon"
+  location = "시애틀, 미국"
+  description = "Project Kuiper 위성 비행 컴퓨터 시스템, Prime Air 드론 배터리 관리 및 비행 제어 시스템, 보안 부트로더 개발"
+  url = ""
+
+[[params.trackRecord]]
+  company = "Microsoft"
+  location = "시애틀, 미국"
+  description = "IEEE 802.11mc 기반 실내 측위 시스템, Windows 디바이스 드라이버(KMDF/UMDF) 개발"
+  url = ""
+
+[[params.trackRecord]]
+  company = "Qualcomm"
+  location = "샌디에이고, 미국"
+  description = "802.11ad WLAN 전력 최적화, PCIe 드라이버 개발, 저전력 Wi-Fi 펌웨어 설계"
+  url = ""
+
+[[params.trackRecord]]
+  company = "Samsung Electronics"
+  location = "수원, 대한민국"
+  description = "스마트폰 플랫폼 소프트웨어 개발 (Android)"
+  url = ""
