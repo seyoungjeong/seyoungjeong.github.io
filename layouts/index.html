@@ -10,7 +10,6 @@
         <a href="#founder">설립자</a>
         <a href="#services">서비스</a>
         <a href="#tech-stack">기술 스택</a>
-        <a href="#track-record">경력</a>
         <a href="#contact">문의</a>
       </nav>
     </div>
@@ -20,16 +19,14 @@
     <section class="hero">
       <div class="container">
         <h1>{{ .Site.Params.tagline }}</h1>
-        <p class="hero-sub">스마트폰부터 위성 비행 컴퓨터까지, 미국 빅테크 경험을 포함해 20년 이상의 실전 경험을 기반으로 한 임베디드 엔지니어링 전문 기업입니다.</p>
-        <a class="cta" href="#contact">문의하기</a>
+        <p class="hero-sub">미국 빅테크에서 쌓은 연구, 양산 경험을 기반으로 한 임베디드 토탈 솔루션을 제공합니다</p>
       </div>
     </section>
 
     <section id="about" class="section">
       <div class="container">
         <h2>소개</h2>
-        <p>알펜탈 시스템즈는 임베디드 펌웨어, RTOS, 디바이스 드라이버 분야에서 20년 이상의 실무 경험을 바탕으로 설립된 엔지니어링 기업입니다. 스마트폰 플랫폼(Android)부터 위성 비행 컴퓨터 시스템, 드론 배터리 관리 시스템, 무선 통신 전력 최적화까지 항공우주와 소비자 가전을 아우르는 다양한 프로젝트를 수행해 왔습니다.</p>
-        <p>시스템 브링업부터 양산 배포까지 전 과정을 책임지는 실전 중심의 솔루션을 제공합니다.</p>
+        <p>알펜탈 시스템즈는 설립자가 삼성전자, 미국의 아마존, 마이크로소프트, 퀄컴 등에서 소프트웨어 엔지니어로 쌓은 20여년의 임베디드 펌웨어, RTOS, 디바이스 드라이버 분야의 실무 경험을 바탕으로 설립된 엔지니어링 기업입니다. 위성 비행 컴퓨터 시스템, 드론 배터리 관리 시스템(BMS), FTS(Flight Termination System), WLAN SOC 전력 최적화, Windows 디바이스 드라이버 개발, AWS와 연동된 edge 디바이스의 데이터 처리, 양산 지원 까지 항공우주와 소비자 가전을 아우르는 다양한 프로젝트를 수행해 왔습니다. 시스템 브링업부터 양산 배포까지 전 과정을 책임지는 실전 중심의 솔루션을 제공합니다.</p></p>
       </div>
     </section>
 
@@ -38,15 +35,15 @@
         <h2>설립자</h2>
         <div class="founder">
           <h3>정석영 (Seo Jeong)</h3>
-          <p class="founder-title">설립자 · Principal Engineer</p>
+          <p class="founder-title">Founder · Principal Engineer</p>
           <ul class="tags founder-badges">
             <li>Amazon</li>
             <li>Qualcomm</li>
             <li>Microsoft</li>
             <li>Samsung Electronics</li>
           </ul>
-          <p>정석영은 Amazon, Qualcomm, Microsoft 등 미국 빅테크 기업에서 20년 이상 임베디드 소프트웨어 엔지니어로 활동하며, 위성 비행 컴퓨터 시스템, 드론 비행 제어 시스템, 무선 통신 전력 최적화 등 다양한 실전 프로젝트를 이끌어 왔습니다.</p>
-          <p>알펜탈 시스템즈는 이러한 현장 경험을 바탕으로 고객과 파트너가 믿고 맡길 수 있는 임베디드 엔지니어링 솔루션을 제공합니다.</p>
+          <p>정석영 대표는 삼성전자를 시작으로 Amazon, Qualcomm, Microsoft 등 글로벌 빅테크 기업에서 20년 이상 임베디드 소프트웨어 엔지니어로 활약하며, 위성 비행 컴퓨터, 드론 제어 시스템, 무선 통신 전력 최적화 등 고신뢰성이 요구되는 핵심 프로젝트들을 성공적으로 수행해 왔습니다.</p>
+  <p>알펜탈 시스템즈는 이러한 20년의 검증된 현장 경험과 노하우를 바탕으로, 고객사가 믿고 맡길 수 있는 최상의 임베디드 토탈 엔지니어링 솔루션을 제공합니다.</p>
         </div>
       </div>
     </section>
@@ -116,21 +113,7 @@
       </div>
     </section>
 
-    <section id="track-record" class="section">
-      <div class="container">
-        <h2>경력</h2>
-        <ul class="timeline">
-          {{ range .Site.Params.trackRecord }}
-          <li>
-            <h3>{{ .company }} ({{ .location }}){{ with .url }} <a href="{{ . }}" class="link-icon" target="_blank" rel="noopener">↗</a>{{ end }}</h3>
-            <p>{{ .description }}</p>
-          </li>
-          {{ end }}
-        </ul>
-      </div>
-    </section>
-
-    <section id="contact" class="section alt">
+    <section id="contact" class="section">
       <div class="container">
         <h2>문의</h2>
         <p>프로젝트 문의는 이메일로 연락해 주세요.</p>
