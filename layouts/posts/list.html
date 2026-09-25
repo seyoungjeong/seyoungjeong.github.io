@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+{{ partial "head.html" . }}
+<body>
+  {{ partial "header.html" . }}
+
+  <main class="section">
+    <div class="container">
+      <h1 class="page-title">{{ .Title }}</h1>
+      {{- with .Description }}
+      <p class="page-sub">{{ . }}</p>
+      {{- end }}
+      {{- with .Pages.ByDate.Reverse }}
+      {{ partial "post-list.html" . }}
+      {{- else }}
+      <p class="page-sub">아직 게시된 글이 없습니다.</p>
+      {{- end }}
+    </div>
+  </main>
+
+  {{ partial "footer.html" . }}
+</body>
+</html>

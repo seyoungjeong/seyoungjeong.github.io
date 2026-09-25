@@ -1,0 +1,11 @@
+<ul class="post-list">
+  {{- range . }}
+  <li>
+    <a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{- with .Params.summary_en }}
+    <p class="post-summary-en" lang="en">{{ . | plainify | truncate 160 }}</p>
+    {{- end }}
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+  </li>
+  {{- end }}
+</ul>

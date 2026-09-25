@@ -1,7 +1,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ .Site.Title }}</title>
-  <meta name="description" content="{{ .Site.Params.tagline }}">
+  {{- $title := .Site.Title }}
+  {{- if not .IsHome }}{{ $title = printf "%s | %s" .Title .Site.Title }}{{ end }}
+  {{- $desc := .Site.Params.tagline }}
+  {{- with .Description }}{{ $desc = . }}{{ end }}
+  <title>{{ $title }}</title>
+  <meta name="description" content="{{ $desc }}">
+  <meta property="og:title" content="{{ $title }}">
+  <meta property="og:description" content="{{ $desc }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 </head>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+{{ partial "head.html" . }}
+<body>
+  {{ partial "header.html" . }}
+
+  <main class="section">
+    <article class="container post">
+      <header class="post-header">
+        <h1>{{ .Title }}</h1>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      </header>
+
+      {{- with .Params.summary_en }}
+      <aside class="summary-en" lang="en">
+        <p class="summary-en-label">Summary (English)</p>
+        <p>{{ . }}</p>
+      </aside>
+      {{- end }}
+
+      <div class="post-body">
+        {{ .Content }}
+      </div>
+
+      <footer class="post-footer">
+        {{- with .Params.repo }}
+        <p><a href="{{ . }}">View code on GitHub</a></p>
+        {{- end }}
+        <p>비슷한 프로젝트를 검토 중이시면 연락 주세요. <span lang="en">Working on something similar? Get in touch.</span></p>
+        <a class="cta" href="mailto:{{ .Site.Params.contactEmail }}">{{ .Site.Params.contactEmail }}</a>
+      </footer>
+    </article>
+  </main>
+
+  {{ partial "footer.html" . }}
+</body>
+</html>
