@@ -6,6 +6,9 @@
       <a href="{{ "/#founder" | relURL }}">설립자</a>
       <a href="{{ "/#services" | relURL }}">서비스</a>
       <a href="{{ "/#tech-stack" | relURL }}">기술 스택</a>
+      {{- if where .Site.RegularPages "Section" "posts" }}
+      <a href="{{ "/posts/" | relURL }}">기술 블로그</a>
+      {{- end }}
       <a href="{{ "/#contact" | relURL }}">문의</a>
     </nav>
   </div>

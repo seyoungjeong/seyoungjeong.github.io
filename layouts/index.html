@@ -104,6 +104,15 @@
   </div>
 </section>
 
+{{- with first 3 (where .Site.RegularPages "Section" "posts").ByDate.Reverse }}
+<section id="posts" class="section section-bordered">
+  <div class="container">
+    <h2>기술 블로그</h2>
+    {{ partial "post-list.html" . }}
+    <p class="more-link"><a href="{{ "/posts/" | relURL }}">전체 글 보기 &rarr;</a></p>
+  </div>
+</section>
+{{- end }}
 
 <section id="tech-stack" class="section alt">
   <div class="container">
