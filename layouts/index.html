@@ -2,18 +2,7 @@
 <html lang="ko">
 {{ partial "head.html" . }}
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="wordmark" href="#top">알펜탈 시스템즈</a>
-      <nav class="nav">
-        <a href="#about">소개</a>
-        <a href="#founder">설립자</a>
-        <a href="#services">서비스</a>
-        <a href="#tech-stack">기술 스택</a>
-        <a href="#contact">문의</a>
-      </nav>
-    </div>
-  </header>
+  {{ partial "header.html" . }}
 
   <main id="top">
     <section class="hero">
@@ -176,10 +165,6 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 Alpental Systems. All rights reserved.</p>
-    </div>
-  </footer>
+  {{ partial "footer.html" . }}
 </body>
 </html>
