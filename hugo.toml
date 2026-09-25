@@ -1,5 +1,6 @@
 baseURL = "https://alpentalsystems.com/"
 languageCode = "ko-KR"
+timeZone = "Asia/Seoul"
 title = "알펜탈 시스템즈 (Alpental Systems)"
 disableKinds = ["taxonomy", "term"]
 enableRobotsTXT = true
