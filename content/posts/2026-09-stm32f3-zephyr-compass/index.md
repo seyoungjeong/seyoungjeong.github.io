@@ -11,8 +11,8 @@ summary_en: >
   calibration bug that raw sensor data exposed and a span check fixed.
   Along the way, a regression in Zephyr's I3G4250D gyroscope driver was
   found on the board and submitted upstream as a one-line fix.
-repo: ""
-draft: true
+repo: "https://github.com/alpentalsystems/stm32f3-zephyr-compass"
+draft: false
 ---
 
 STM32F3 Discovery 보드에는 가속도 센서, 지자기 센서, 자이로 센서와 함께 LED 8개가 나침반 모양으로 둥글게 배치되어 있습니다. 이번 글에서는 이 보드로 **자북을 가리키는 LED가 켜지는 나침반**을 Zephyr RTOS로 만들었습니다. 보드를 기울여도 방향이 틀어지지 않도록 기울기 보정을 넣고, 버튼으로 시작하는 캘리브레이션 결과는 플래시에 저장합니다.
