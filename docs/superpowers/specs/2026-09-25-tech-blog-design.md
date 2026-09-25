@@ -37,7 +37,7 @@ is proof of the services listed on the landing page.
   title: "..."          # Korean title
   date: 2026-10-05
   description: "..."    # one-line Korean summary; used for meta description
-  summary_en: |         # 3-5 English sentences; required for published posts
+  summary_en: >         # 3-5 English sentences; required for published posts
     ...
   repo: ""              # optional URL; empty while the repo is private
   draft: true
@@ -50,7 +50,10 @@ is proof of the services listed on the landing page.
    `layouts/partials/footer.html`. Nav anchors become `/#about` style
    (via `relURL`) so they work from any page; the wordmark links to `/`.
 2. `layouts/posts/list.html`: section page, newest first. Each item: Korean
-   title (link), `summary_en` first line as an English subtitle, date.
+   title (link), `summary_en` truncated to 160 characters as an English
+   subtitle, date. Items are rendered by `layouts/partials/post-list.html`,
+   shared with the home section. Section title and description come from
+   `content/posts/_index.md`.
 3. `layouts/posts/single.html`: title, date, a "Summary (English)" box with
    `summary_en`, Korean body, then a "View code" link when `repo` is set, and a
    contact call-to-action (`mailto:` from `params.contactEmail`).
@@ -60,6 +63,8 @@ is proof of the services listed on the landing page.
    (`article` for posts, `website` otherwise), `og:url`.
 5. `layouts/index.html`:
    - Nav: add "기술 블로그" linking to `/posts/`, between 기술 스택 and 문의.
+     Like the section below, it renders only when a published post exists,
+     so clients never land on an empty blog.
    - New section `#posts` "기술 블로그" after 서비스: the 3 newest published
      posts (title, English subtitle, date) and a link to `/posts/`. The whole
      section renders only when at least one published post exists.
