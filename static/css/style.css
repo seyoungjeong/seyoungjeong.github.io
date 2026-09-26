@@ -285,15 +285,6 @@ body {
   margin: 0;
 }
 
-.summary-en .summary-en-label {
-  margin-bottom: 6px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--color-accent);
-}
-
 .post-body h2 {
   font-size: 1.4rem;
   margin: 40px 0 12px;
