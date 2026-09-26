@@ -230,4 +230,4 @@ static void test_cal_balanced_spans_are_accepted(void)
 
 이런 제품에서 많은 시간이 드는 부분은 알고리즘 자체보다, 센서가 실제 보드에서 맞게 동작하는지 확인하고 현장 캘리브레이션이 제대로 되었는지 판단하는 일입니다. 이번 글에서 드라이버 버그와 캘리브레이션 버그를 데이터로 찾아낸 과정이 바로 그 작업입니다.
 
-펌웨어와 호스트 테스트, 설계 문서는 [GitHub 저장소](https://github.com/alpentalsystems/stm32f3-zephyr-compass)에 있습니다. 비슷한 센서 통합이나 Zephyr 기반 펌웨어 개발이 필요하시면 언제든 연락 주세요.
+비슷한 센서 통합이나 Zephyr 기반 펌웨어 개발이 필요하시면 언제든 연락 주세요.
