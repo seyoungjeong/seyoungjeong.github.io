@@ -19,8 +19,6 @@ STM32F3 Discovery 보드에는 가속도 센서, 지자기 센서, 자이로 센
 
 결과물 자체보다 **과정에서 만난 문제와 그 문제를 데이터로 확인하고 고친 방법**에 초점을 맞췄습니다. 실제 제품 개발에서도 시간을 가장 많이 쓰는 부분이 바로 이런 곳이기 때문입니다.
 
-전체 코드: [github.com/alpentalsystems/stm32f3-zephyr-compass](https://github.com/alpentalsystems/stm32f3-zephyr-compass)
-
 ![보드의 N 쪽(USB 커넥터 쪽)을 북쪽으로 두면 N 위치의 LD3가 켜집니다. 아래 휴대폰 나침반은 1° 북.](compass-north.jpg)
 
 ## 보드 리비전과 센서 확인
@@ -214,12 +212,5 @@ static void test_cal_balanced_spans_are_accepted(void)
 ![보드를 돌려도 북쪽을 향한 LED가 켜집니다. 여기서는 북서 위치의 LD4.](compass-rotated.jpg)
 
 기울기 보정도 확인했습니다. 북쪽을 향한 채 E 쪽을 약 30° 들면 +8°, N 쪽을 들면 +4°만 변했고, 켜진 LED는 그대로였습니다. 펌웨어 크기는 플래시 68 KB, RAM 9 KB입니다.
-
-## 다음 단계
-
-- 실외에서 네 방향 테스트를 다시 해서 −23° 오차의 원인 확인
-- 로직 애널라이저로 I2C 버스 파형 측정
-- 이 보드에 MCUboot를 올려 서명된 펌웨어 업데이트 적용 (다음 글)
-- I3G4250D 드라이버의 값 변환 문제 업스트림 수정
 
 펌웨어와 호스트 테스트, 설계 문서는 [GitHub 저장소](https://github.com/alpentalsystems/stm32f3-zephyr-compass)에 있습니다. 비슷한 센서 통합이나 Zephyr 기반 펌웨어 개발이 필요하시면 언제든 연락 주세요.
