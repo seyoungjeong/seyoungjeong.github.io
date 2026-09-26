@@ -10,7 +10,9 @@ summary_en: >
   from measurements, tilt compensation tested on the host, and a hard-iron
   calibration bug that raw sensor data exposed and a span check fixed.
   Along the way, a regression in Zephyr's I3G4250D gyroscope driver was
-  found on the board and submitted upstream as a one-line fix.
+  found on the board and submitted upstream as a one-line fix. The post ends
+  with products where the same building blocks apply, such as antenna
+  pointing aids, drone and robot heading sensors, and tilt monitoring.
 repo: "https://github.com/alpentalsystems/stm32f3-zephyr-compass"
 draft: false
 ---
@@ -212,5 +214,20 @@ static void test_cal_balanced_spans_are_accepted(void)
 ![보드를 돌려도 북쪽을 향한 LED가 켜집니다. 여기서는 북서 위치의 LD4.](compass-rotated.jpg)
 
 기울기 보정도 확인했습니다. 북쪽을 향한 채 E 쪽을 약 30° 들면 +8°, N 쪽을 들면 +4°만 변했고, 켜진 LED는 그대로였습니다. 펌웨어 크기는 플래시 68 KB, RAM 9 KB입니다.
+
+## 실제 제품으로 확장한다면
+
+이번 나침반은 데모지만, 그 안에 들어간 요소들은 방향과 기울기를 다루는 제품에 그대로 쓰입니다. 디바이스 트리 기반의 센서 bring-up, 측정으로 정한 축 매핑, 기울기 보정, 검증 조건이 있는 현장 캘리브레이션, 플래시 저장, 호스트 테스트와 CI가 그렇습니다. 예를 들면 이런 제품들입니다.
+
+| 적용 분야 | 이번 작업에서 그대로 쓰는 부분 | 제품으로 만들 때 더할 부분 |
+|---|---|---|
+| 위성·5G 안테나 설치용 방위/기울기 측정기 | 기울기 보정 방위각, 캘리브레이션, 설정 저장 | 금속 마운트를 위한 soft-iron 보정, GPS 기반 진북 보정, 휴대폰 앱 연동(BLE) |
+| 드론·로봇·AGV 방위 센서 | 방위 계산 파이프라인, 오류 처리 | 자이로 융합 필터, 높은 출력 주기, CAN/UART 출력 |
+| 건설·농기계 기울기 모니터링 | 가속도 기반 기울기 계산, 설정 저장, 오류 처리 | 온도 드리프트 보정, CAN(J1939), 보안 펌웨어 업데이트 |
+| 전신주·교량·사면 기울기 모니터링 | 기울기 계산, 설정 저장 | 초저전력 동작, LoRaWAN/NB-IoT, 경보 임계값, 원격 업데이트 |
+| 계량기 자석 탬퍼 감지 | 지자기 센서 bring-up, 기준값 캘리브레이션 | 강한 자석 감지 로직, 저전력, 이벤트 기록 |
+| 물류 자산 추적(기울어짐·충격 감지) | 센서 드라이버, 자세 계산 | 움직임 인터럽트 기반 wake-up, BLE/셀룰러, 배터리 최적화 |
+
+이런 제품에서 많은 시간이 드는 부분은 알고리즘 자체보다, 센서가 실제 보드에서 맞게 동작하는지 확인하고 현장 캘리브레이션이 제대로 되었는지 판단하는 일입니다. 이번 글에서 드라이버 버그와 캘리브레이션 버그를 데이터로 찾아낸 과정이 바로 그 작업입니다.
 
 펌웨어와 호스트 테스트, 설계 문서는 [GitHub 저장소](https://github.com/alpentalsystems/stm32f3-zephyr-compass)에 있습니다. 비슷한 센서 통합이나 Zephyr 기반 펌웨어 개발이 필요하시면 언제든 연락 주세요.
