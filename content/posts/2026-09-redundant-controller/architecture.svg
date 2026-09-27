@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 400" font-family="-apple-system, Segoe UI, sans-serif" font-size="13">
+<rect width="560" height="400" fill="#ffffff"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/></marker></defs>
+<rect x="40" y="40" width="180" height="80" rx="8" fill="#eef4ff" stroke="#3b6fd8"/>
+<text x="130" y="68" text-anchor="middle" font-weight="600" fill="#1f2937">rc-a (슬롯 A)</text>
+<text x="130" y="88" text-anchor="middle" fill="#4b5563">Raspberry Pi 3B</text>
+<text x="130" y="106" text-anchor="middle" fill="#4b5563">Linux 데몬 (C)</text>
+<rect x="340" y="40" width="180" height="80" rx="8" fill="#eef4ff" stroke="#3b6fd8"/>
+<text x="430" y="68" text-anchor="middle" font-weight="600" fill="#1f2937">rc-b (슬롯 B)</text>
+<text x="430" y="88" text-anchor="middle" fill="#4b5563">Raspberry Pi 3B</text>
+<text x="430" y="106" text-anchor="middle" fill="#4b5563">같은 이미지, 같은 데몬</text>
+<line x1="222" y1="80" x2="338" y2="80" stroke="#4b5563" stroke-width="2" stroke-dasharray="6 4" marker-start="url(#ar)" marker-end="url(#ar)"/>
+<text x="280" y="70" text-anchor="middle" fill="#1f2937">크로스링크</text>
+<text x="280" y="100" text-anchor="middle" fill="#4b5563" font-size="11">Ethernet, UDP</text>
+<text x="280" y="114" text-anchor="middle" fill="#4b5563" font-size="11">감시 + 상태 공유</text>
+<line x1="130" y1="122" x2="200" y2="238" stroke="#4b5563" stroke-width="2" marker-start="url(#ar)" marker-end="url(#ar)"/>
+<line x1="430" y1="122" x2="360" y2="238" stroke="#4b5563" stroke-width="2" marker-start="url(#ar)" marker-end="url(#ar)"/>
+<text x="118" y="178" text-anchor="end" fill="#1f2937">UART (USART2)</text>
+<text x="118" y="194" text-anchor="end" fill="#4b5563" font-size="11">heartbeat 20 ms</text>
+<text x="442" y="178" fill="#1f2937">UART (UART4)</text>
+<text x="442" y="194" fill="#4b5563" font-size="11">heartbeat 20 ms</text>
+<rect x="150" y="240" width="260" height="90" rx="8" fill="#fff5e6" stroke="#d98a1c"/>
+<text x="280" y="266" text-anchor="middle" font-weight="600" fill="#1f2937">I/O 카드 = 심판</text>
+<text x="280" y="286" text-anchor="middle" fill="#4b5563">STM32F3 Discovery, Zephyr 4.4.2</text>
+<text x="280" y="304" text-anchor="middle" fill="#4b5563">Active를 한 쪽에만 허가</text>
+<text x="280" y="320" text-anchor="middle" fill="#4b5563">Active의 출력 명령만 적용</text>
+<g transform="translate(470,285)">
+<circle r="34" fill="none" stroke="#e2e5eb" stroke-width="2"/>
+<circle cx="0" cy="-34" r="6" fill="#e0453a"/><circle cx="24" cy="-24" r="6" fill="#e2e5eb"/><circle cx="34" cy="0" r="6" fill="#e2e5eb"/><circle cx="24" cy="24" r="6" fill="#e2e5eb"/>
+<circle cx="0" cy="34" r="6" fill="#e2e5eb"/><circle cx="-24" cy="24" r="6" fill="#e2e5eb"/><circle cx="-34" cy="0" r="6" fill="#e2e5eb"/><circle cx="-24" cy="-24" r="6" fill="#e2e5eb"/>
+</g>
+<line x1="412" y1="285" x2="430" y2="285" stroke="#4b5563" stroke-width="2" marker-end="url(#ar)"/>
+<text x="470" y="345" text-anchor="middle" fill="#4b5563" font-size="11">출력: LED 8개</text>
+<text x="280" y="372" text-anchor="middle" fill="#6b7280" font-size="11">Active의 heartbeat가 100 ms 끊기면 I/O 카드가 Standby에 Active를 넘깁니다.</text>
+</svg>
