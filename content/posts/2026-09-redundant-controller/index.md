@@ -16,7 +16,7 @@ summary_en: >
   alarm, a cross-link dropping every 45 seconds, a frame parser that lost
   frames after noise), a design assumption that the simultaneous-boot
   test proved wrong, and products where the same structure applies.
-repo: "https://github.com/alpentalsystems/redundant-controller"
+repo: "https://github.com/alpentalsystems/redundant-controller/tree/part1"
 draft: false
 ---
 
