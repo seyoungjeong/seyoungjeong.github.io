@@ -3,171 +3,87 @@
 {{ partial "head.html" . }}
 <body>
   {{ partial "header.html" . }}
+  {{- $h := index .Site.Data "ko" "home" }}
 
   <main id="top">
     <section class="hero">
       <div class="container">
         <h1>{{ .Site.Params.tagline }}</h1>
-        <p class="hero-sub">미국 빅테크에서 쌓은 연구, 양산 경험을 기반으로 한 임베디드 토탈 솔루션을 제공합니다</p>
+        <p class="hero-sub">{{ $h.hero_sub }}</p>
       </div>
     </section>
 
     <section id="about" class="section">
       <div class="container">
-        <h2>소개</h2>
-        <p>알펜탈 시스템즈(Alpental Systems)는 설립자가 삼성전자, 미국의 아마존, 마이크로소프트, 퀄컴 등에서 소프트웨어 엔지니어로 쌓은 20여년의 임베디드 펌웨어, RTOS, 디바이스 드라이버 분야의 실무 경험을 바탕으로 설립된 엔지니어링 기업입니다. 위성 비행 컴퓨터 시스템, 드론 배터리 관리 시스템(BMS), FTS(Flight Termination System), WLAN SOC 전력 최적화, Windows 디바이스 드라이버 개발, AWS와 연동된 edge 디바이스의 데이터 처리, 양산 지원 까지 항공우주와 소비자 가전을 아우르는 다양한 프로젝트를 수행해 왔습니다. 시스템 브링업부터 양산 배포까지 전 과정을 책임지는 실전 중심의 솔루션을 제공합니다.</p>
+        <h2>{{ $h.about.title }}</h2>
+        <p>{{ $h.about.body }}</p>
       </div>
     </section>
 
-<section id="services" class="section alt">
-  <div class="container">
-    <h2>서비스 (Engineering Services)</h2>
-    <div class="cards">
-      <!-- 1. RTOS & 펌웨어 -->
-      <div class="card">
-        <h3>RTOS &amp; 초저전력 펌웨어 개발</h3>
-        <p>Zephyr, FreeRTOS 등 오픈소스 RTOS 기반의 맞춤형 아키텍처 설계; 초소형·저전력 미션 크리티컬 디바이스를 위한 고신뢰성 펌웨어 구현</p>
-      </div>
-
-      <!-- 2. 임베디드 리눅스 (신규 확장) -->
-      <div class="card">
-        <h3>임베디드 리눅스 &amp; BSP 엔지니어링</h3>
-        <p>Yocto Project / Buildroot 기반 커스텀 리눅스 BSP 구축; 디바이스 드라이버 작성, 커널 최적화, 실시간성(PREEMPT_RT) 확보 및 시스템 이식</p>
-      </div>
-
-      <!-- 3. 라이다 센서 데이터 처리 (신규) -->
-      <div class="card">
-        <h3>라이다(LiDAR) 센서 데이터 처리 &amp; 파이프라인</h3>
-        <p>3D 라이다 포인트 클라우드(Point Cloud) 실시간 수집 및 필터링; 임베디드 타겟 플랫폼에 최적화된 객체 인식, 점군 데이터 압축 및 3D 공간 파이프라인 구축</p>
-      </div>
-
-      <!-- 4. 임베디드 비전 & 카메라 영상 처리 (신규) -->
-      <div class="card">
-        <h3>임베디드 비전 &amp; 카메라 영상 처리</h3>
-        <p>MIPI-CSI / USB / Ethernet 카메라 인터페이스 드라이버 개발; OpenCV 및 Hardware Accelerator(GPU/NPU) 기반 실시간 영상 전처리, 파이프라인 및 Edge AI 최적화</p>
-      </div>
-
-      <!-- 5. 디바이스 드라이버 & 인터페이스 -->
-      <div class="card">
-        <h3>초고속 디바이스 드라이버 &amp; Bus 인터페이스</h3>
-        <p>I2C, SPI, UART부터 USB, PCIe, CAN, Ethernet까지; 하드웨어 특성을 극대화하는 레지스터 수준 드라이버 및 통신 아키텍처 설계</p>
-      </div>
-
-      <!-- 6. 시스템 브링업 -->
-      <div class="card">
-        <h3>시스템 브링업 &amp; 트러블슈팅</h3>
-        <p>신규 개발 SoC/FPGA 보드의 하드웨어 초기화 및 OS 임베딩; 오실로스코프 및 로직 분석기 기반의 하드웨어-소프트웨어 통합 디버깅</p>
-      </div>
-
-      <!-- 7. 시큐어 부트 & 보안 -->
-      <div class="card">
-        <h3>시큐어 부트(Secure Boot) &amp; 보안 솔루션</h3>
-        <p>MCUboot, ARM TrustZone 기반의 안전한 부트로더 설계; 암호화 키 관리, 무결성 검증 및 안전한 FOTA(Firmware Over-The-Air) 구현</p>
-      </div>
-
-      <!-- 8. 전력 최적화 -->
-      <div class="card">
-        <h3>초저전력 최적화 &amp; 시스템 프로파일링</h3>
-        <p>동적 전력 관리(DVFS) 및 딥 슬립 모드 아키텍처 적용; 런타임 성능 프로파일링을 통한 리소스 소모 최소화 및 병목 현상 해결</p>
-      </div>
-
-      <!-- 9. CI/CD & HIL 테스트 -->
-      <div class="card">
-        <h3>임베디드 CI/CD &amp; HIL 테스트 인프라</h3>
-        <p>실제 타겟 하드웨어 연동 HIL(Hardware-in-the-Loop) 자동화 파이프라인 구축; 빌드·테스트·배포 전 과정의 자동화로 소프트웨어 품질 확보</p>
-      </div>
-
-      <!-- 10. 로보틱스 & Edge AI -->
-      <div class="card">
-        <h3>로보틱스 &amp; Edge AI 시스템 통합</h3>
-        <p>ROS / ROS 2 기반의 분산 로봇 소프트웨어 아키텍처 설계; Edge AI 디바이스 및 AWS IoT 클라우드 파이프라인과의 고성능 데이터 연동</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-{{- with first 3 (where .Site.RegularPages "Section" "posts").ByDate.Reverse }}
-<section id="posts" class="section section-bordered">
-  <div class="container">
-    <h2>기술 블로그</h2>
-    {{ partial "post-list.html" . }}
-    <p class="more-link"><a href="{{ "/posts/" | relURL }}">전체 글 보기 &rarr;</a></p>
-  </div>
-</section>
-{{- end }}
-
-<section id="tech-stack" class="section alt">
-  <div class="container">
-    <h2>기술 스택 (Tech Stack)</h2>
-    
-    <div class="cards">
-      <div class="card">
-        <h3>Languages &amp; OS</h3>
-        <div class="badges">
-          <span class="badge">C/C++</span>
-          <span class="badge">Rust</span>
-          <span class="badge">Python</span>
-          <span class="badge">Zephyr RTOS</span>
-          <span class="badge">FreeRTOS</span>
-          <span class="badge">Embedded Linux</span>
+    <section id="services" class="section alt">
+      <div class="container">
+        <h2>{{ $h.services.title }}</h2>
+        <div class="cards">
+          {{- range $h.services.cards }}
+          <div class="card">
+            <h3>{{ .title }}</h3>
+            <p>{{ .body }}</p>
+          </div>
+          {{- end }}
         </div>
       </div>
+    </section>
 
-      <div class="card">
-        <h3>Interfaces &amp; Protocols</h3>
-        <div class="badges">
-          <span class="badge">I2C / SPI / UART</span>
-          <span class="badge">USB / PCIe</span>
-          <span class="badge">CAN / CAN-FD</span>
-          <span class="badge">Ethernet</span>
-          <span class="badge">BLE</span>
-          <span class="badge">WiFi</span>
+    {{- with first 3 (where .Site.RegularPages "Section" "posts").ByDate.Reverse }}
+    <section id="posts" class="section section-bordered">
+      <div class="container">
+        <h2>{{ $h.posts.title }}</h2>
+        {{ partial "post-list.html" . }}
+        <p class="more-link"><a href="{{ "/posts/" | relURL }}">{{ $h.posts.more | safeHTML }}</a></p>
+      </div>
+    </section>
+    {{- end }}
+
+    <section id="tech-stack" class="section alt">
+      <div class="container">
+        <h2>{{ $h.tech.title }}</h2>
+        <div class="cards">
+          {{- range $h.tech.cards }}
+          <div class="card">
+            <h3>{{ .title }}</h3>
+            <div class="badges">
+              {{- range .badges }}
+              <span class="badge">{{ . }}</span>
+              {{- end }}
+            </div>
+          </div>
+          {{- end }}
         </div>
       </div>
+    </section>
 
-      <div class="card">
-        <h3>Vision, AI &amp; Robotics</h3>
-        <div class="badges">
-          <span class="badge">ROS / ROS 2</span>
-          <span class="badge">LiDAR (Point Cloud)</span>
-          <span class="badge">OpenCV</span>
-          <span class="badge">AWS IoT</span>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Hardware &amp; Tools</h3>
-        <div class="badges">
-          <span class="badge">ARM Cortex-M/A</span>
-          <span class="badge">STM32 / nRF52</span>
-          <span class="badge">OpenOCD / GDB</span>
-          <span class="badge">Git / Docker</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
     <section id="founder" class="section">
       <div class="container">
-        <h2>설립자</h2>
+        <h2>{{ $h.founder.title }}</h2>
         <div class="founder">
-          <h3>정석영 (Seo Jeong)</h3>
-          <p class="founder-title">Founder · Principal Engineer</p>
+          <h3>{{ $h.founder.name }}</h3>
+          <p class="founder-title">{{ $h.founder.role }}</p>
           <ul class="tags founder-badges">
-            <li>Amazon</li>
-            <li>Qualcomm</li>
-            <li>Microsoft</li>
-            <li>Samsung Electronics</li>
+            {{- range $h.founder.badges }}
+            <li>{{ . }}</li>
+            {{- end }}
           </ul>
-          <p>정석영 대표는 삼성전자를 시작으로 Amazon, Qualcomm, Microsoft 등 글로벌 빅테크 기업에서 20년 이상 임베디드 소프트웨어 엔지니어로 일하며, 위성 비행 컴퓨터, 드론 제어 시스템, 무선 통신 전력 최적화 등 고신뢰성이 요구되는 핵심 프로젝트들을 성공적으로 수행해 왔습니다.</p>
-  <p>알펜탈 시스템즈는 이러한 20년의 검증된 현장 경험과 노하우를 바탕으로, 고객사가 믿고 맡길 수 있는 최상의 임베디드 토탈 엔지니어링 솔루션을 제공합니다.</p>
+          {{- range $h.founder.paragraphs }}
+          <p>{{ . }}</p>
+          {{- end }}
         </div>
       </div>
     </section>
+
     <section id="contact" class="section alt">
       <div class="container">
-        <h2>문의</h2>
-        <p>프로젝트 문의는 이메일로 연락해 주세요.</p>
+        <h2>{{ $h.contact.title }}</h2>
+        <p>{{ $h.contact.body }}</p>
         <a class="cta" href="mailto:{{ .Site.Params.contactEmail }}">{{ .Site.Params.contactEmail }}</a>
       </div>
     </section>

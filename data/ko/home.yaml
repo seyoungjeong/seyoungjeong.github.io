@@ -1,0 +1,58 @@
+hero_sub: "미국 빅테크에서 쌓은 연구, 양산 경험을 기반으로 한 임베디드 토탈 솔루션을 제공합니다"
+
+about:
+  title: "소개"
+  body: "알펜탈 시스템즈(Alpental Systems)는 설립자가 삼성전자, 미국의 아마존, 마이크로소프트, 퀄컴 등에서 소프트웨어 엔지니어로 쌓은 20여년의 임베디드 펌웨어, RTOS, 디바이스 드라이버 분야의 실무 경험을 바탕으로 설립된 엔지니어링 기업입니다. 위성 비행 컴퓨터 시스템, 드론 배터리 관리 시스템(BMS), FTS(Flight Termination System), WLAN SOC 전력 최적화, Windows 디바이스 드라이버 개발, AWS와 연동된 edge 디바이스의 데이터 처리, 양산 지원 까지 항공우주와 소비자 가전을 아우르는 다양한 프로젝트를 수행해 왔습니다. 시스템 브링업부터 양산 배포까지 전 과정을 책임지는 실전 중심의 솔루션을 제공합니다."
+
+services:
+  title: "서비스 (Engineering Services)"
+  cards:
+    - title: "RTOS & 초저전력 펌웨어 개발"
+      body: "Zephyr, FreeRTOS 등 오픈소스 RTOS 기반의 맞춤형 아키텍처 설계; 초소형·저전력 미션 크리티컬 디바이스를 위한 고신뢰성 펌웨어 구현"
+    - title: "임베디드 리눅스 & BSP 엔지니어링"
+      body: "Yocto Project / Buildroot 기반 커스텀 리눅스 BSP 구축; 디바이스 드라이버 작성, 커널 최적화, 실시간성(PREEMPT_RT) 확보 및 시스템 이식"
+    - title: "라이다(LiDAR) 센서 데이터 처리 & 파이프라인"
+      body: "3D 라이다 포인트 클라우드(Point Cloud) 실시간 수집 및 필터링; 임베디드 타겟 플랫폼에 최적화된 객체 인식, 점군 데이터 압축 및 3D 공간 파이프라인 구축"
+    - title: "임베디드 비전 & 카메라 영상 처리"
+      body: "MIPI-CSI / USB / Ethernet 카메라 인터페이스 드라이버 개발; OpenCV 및 Hardware Accelerator(GPU/NPU) 기반 실시간 영상 전처리, 파이프라인 및 Edge AI 최적화"
+    - title: "초고속 디바이스 드라이버 & Bus 인터페이스"
+      body: "I2C, SPI, UART부터 USB, PCIe, CAN, Ethernet까지; 하드웨어 특성을 극대화하는 레지스터 수준 드라이버 및 통신 아키텍처 설계"
+    - title: "시스템 브링업 & 트러블슈팅"
+      body: "신규 개발 SoC/FPGA 보드의 하드웨어 초기화 및 OS 임베딩; 오실로스코프 및 로직 분석기 기반의 하드웨어-소프트웨어 통합 디버깅"
+    - title: "시큐어 부트(Secure Boot) & 보안 솔루션"
+      body: "MCUboot, ARM TrustZone 기반의 안전한 부트로더 설계; 암호화 키 관리, 무결성 검증 및 안전한 FOTA(Firmware Over-The-Air) 구현"
+    - title: "초저전력 최적화 & 시스템 프로파일링"
+      body: "동적 전력 관리(DVFS) 및 딥 슬립 모드 아키텍처 적용; 런타임 성능 프로파일링을 통한 리소스 소모 최소화 및 병목 현상 해결"
+    - title: "임베디드 CI/CD & HIL 테스트 인프라"
+      body: "실제 타겟 하드웨어 연동 HIL(Hardware-in-the-Loop) 자동화 파이프라인 구축; 빌드·테스트·배포 전 과정의 자동화로 소프트웨어 품질 확보"
+    - title: "로보틱스 & Edge AI 시스템 통합"
+      body: "ROS / ROS 2 기반의 분산 로봇 소프트웨어 아키텍처 설계; Edge AI 디바이스 및 AWS IoT 클라우드 파이프라인과의 고성능 데이터 연동"
+
+posts:
+  title: "기술 블로그"
+  more: "전체 글 보기 &rarr;"
+
+tech:
+  title: "기술 스택 (Tech Stack)"
+  cards:
+    - title: "Languages & OS"
+      badges: ["C/C++", "Rust", "Python", "Zephyr RTOS", "FreeRTOS", "Embedded Linux"]
+    - title: "Interfaces & Protocols"
+      badges: ["I2C / SPI / UART", "USB / PCIe", "CAN / CAN-FD", "Ethernet", "BLE", "WiFi"]
+    - title: "Vision, AI & Robotics"
+      badges: ["ROS / ROS 2", "LiDAR (Point Cloud)", "OpenCV", "AWS IoT"]
+    - title: "Hardware & Tools"
+      badges: ["ARM Cortex-M/A", "STM32 / nRF52", "OpenOCD / GDB", "Git / Docker"]
+
+founder:
+  title: "설립자"
+  name: "정석영 (Seo Jeong)"
+  role: "Founder · Principal Engineer"
+  badges: ["Amazon", "Qualcomm", "Microsoft", "Samsung Electronics"]
+  paragraphs:
+    - "정석영 대표는 삼성전자를 시작으로 Amazon, Qualcomm, Microsoft 등 글로벌 빅테크 기업에서 20년 이상 임베디드 소프트웨어 엔지니어로 일하며, 위성 비행 컴퓨터, 드론 제어 시스템, 무선 통신 전력 최적화 등 고신뢰성이 요구되는 핵심 프로젝트들을 성공적으로 수행해 왔습니다."
+    - "알펜탈 시스템즈는 이러한 20년의 검증된 현장 경험과 노하우를 바탕으로, 고객사가 믿고 맡길 수 있는 최상의 임베디드 토탈 엔지니어링 솔루션을 제공합니다."
+
+contact:
+  title: "문의"
+  body: "프로젝트 문의는 이메일로 연락해 주세요."
