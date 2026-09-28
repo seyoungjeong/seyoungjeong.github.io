@@ -1,5 +1,6 @@
 ---
 title: "STM32F3 Discovery와 Zephyr로 기울기 보정 나침반 만들기"
+title_en: "Building a Tilt-Compensated Compass with STM32F3 Discovery and Zephyr"
 date: 2026-09-25
 description: "STM32F3 Discovery(Rev E)에서 Zephyr 4.4.2로 기울기 보정 나침반을 만들며 겪은 보드 리비전 확인, 센서 축 매핑, 캘리브레이션 버그 수정, 그리고 Zephyr 드라이버 버그의 업스트림 수정까지 정리했습니다."
 summary_en: >

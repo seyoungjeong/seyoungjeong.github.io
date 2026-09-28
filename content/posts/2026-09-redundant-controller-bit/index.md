@@ -1,5 +1,6 @@
 ---
 title: "이중화 제어기 2편: 자체 점검(BIT)으로 '살아 있지만 고장 난' 제어기 잡아내기"
+title_en: "Redundant Controller, Part 2: Catching a Controller That Is Alive but Broken with Built-In Test"
 date: 2026-09-27
 description: "이중화 제어기에 부팅 점검(PBIT)과 주기 점검(CBIT), 점검 모드, TCP 명령 서버를 더했습니다. 타임아웃으로는 잡히지 않는 반쪽 고장을 자체 점검으로 찾아 약 1.7초 만에 Standby로 넘기고, 코드 리뷰에서 찾은 공통 고장 문제까지 실측으로 확인했습니다."
 summary_en: >

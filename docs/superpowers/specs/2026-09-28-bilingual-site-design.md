@@ -57,7 +57,8 @@ pages"). This design replaces that non-goal.
 `/en/posts/` lists every Korean post, newest first. Each entry has:
 
 - an anchor `id="<slug>"` (the post's directory name),
-- the Korean title with the English summary in full (not truncated),
+- the post's English title (`title_en` in its front matter; the Korean
+  title if it has none) with the English summary in full (not truncated),
 - the date,
 - "Read the full article (Korean) →" linking to the Korean post, or to the
   English translation when `index.en.md` exists,

@@ -1,5 +1,6 @@
 ---
 title: "라즈베리 파이 두 대와 STM32로 이중화(Active/Standby) 제어기 만들기"
+title_en: "Building a Redundant (Active/Standby) Controller with Two Raspberry Pis and an STM32"
 date: 2026-09-27
 description: "Raspberry Pi 3B 두 대를 Active/Standby 제어기로, STM32F3 Discovery를 I/O 카드이자 심판으로 써서 이중화 제어기를 만들고, 전원을 뽑아 약 100 ms 만에 전환되는 것을 측정했습니다. 설계 선택, 현장에서 만난 문제, 실험 결과를 정리했습니다."
 summary_en: >

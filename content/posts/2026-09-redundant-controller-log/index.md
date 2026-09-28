@@ -1,5 +1,6 @@
 ---
 title: "이중화 제어기 3편: 링 버퍼 로그와 Mac 뷰어로 고장 순간 다시 보기"
+title_en: "Redundant Controller, Part 3: Replaying Failures with a Ring-Buffer Log and a Mac Viewer"
 date: 2026-09-28
 description: "이중화 제어기에 100 ms 스냅샷과 이벤트를 남기는 링 버퍼 로그와, 두 제어기의 로그를 한 타임라인으로 합쳐 보여 주는 Mac 로그 뷰어를 더했습니다. SD 카드 쓰기 한 번이 제어 루프를 3.7초 멈춰 실제 전환까지 일으킨 문제를 찾아 구조를 바꾼 과정도 정리했습니다."
 summary_en: >

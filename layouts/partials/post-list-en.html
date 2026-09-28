@@ -7,7 +7,8 @@
     {{- if eq .Language.Lang "en" }}{{ $target = .RelPermalink }}{{ $translated = true }}{{ end }}
   {{- end }}
   <li id="{{ .File.ContentBaseName }}">
-    <a class="post-title" href="{{ $target }}"{{ if not $translated }} lang="ko"{{ end }}>{{ .Title }}</a>
+    {{- $title := .Params.title_en | default .Title }}
+    <a class="post-title" href="{{ $target }}"{{ if not (or $translated .Params.title_en) }} lang="ko"{{ end }}>{{ $title }}</a>
     {{- with .Params.summary_en }}
     <p class="post-summary-en">{{ if $.full }}{{ . }}{{ else }}{{ . | plainify | truncate 160 }}{{ end }}</p>
     {{- end }}
