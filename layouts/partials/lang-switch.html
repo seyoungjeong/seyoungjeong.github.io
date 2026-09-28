@@ -1,0 +1,16 @@
+{{- /* Link to this page in the other language; a Korean post without a translation goes to its English list entry. */ -}}
+{{- $target := "" }}
+{{- $lang := "" }}
+{{- range .Translations }}{{ $target = .RelPermalink }}{{ $lang = .Language.Lang }}{{ end }}
+{{- if not $target }}
+  {{- range site.Home.Translations }}
+    {{- $target = .RelPermalink }}
+    {{- $lang = .Language.Lang }}
+    {{- if and $.IsPage (eq $.Section "posts") (eq $.Site.Language.Lang "ko") }}
+      {{- $target = printf "%sposts/#%s" .RelPermalink $.File.ContentBaseName }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- with $target }}
+<a class="lang-switch" href="{{ . }}" hreflang="{{ $lang }}">{{ i18n "switch_label" }}</a>
+{{- end }}
