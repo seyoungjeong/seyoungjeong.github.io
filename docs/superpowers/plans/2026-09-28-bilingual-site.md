@@ -425,13 +425,14 @@ Create `layouts/partials/ko-posts.html`:
 
 ```html
 {{- /* The Korean posts, from any language: English has no post files of its own. */ -}}
-{{- $section := site.GetPage "/posts" }}
-{{- $pages := $section.Pages }}
+{{- $home := site.Home }}
 {{- if ne site.Language.Lang "ko" }}
-  {{- range $section.Translations }}
-    {{- if eq .Language.Lang "ko" }}{{ $pages = .Pages }}{{ end }}
+  {{- range site.Home.Translations }}
+    {{- if eq .Language.Lang "ko" }}{{ $home = . }}{{ end }}
   {{- end }}
 {{- end }}
+{{- $pages := slice }}
+{{- with $home.GetPage "/posts" }}{{ $pages = .Pages }}{{ end }}
 {{- return $pages }}
 ```
 
@@ -509,7 +510,8 @@ In `layouts/index.html`:
 
 ```html
     {{- $posts := partial "ko-posts.html" . }}
-    {{- with first 3 $posts.ByDate.Reverse }}
+    {{- with $posts }}{{ $posts = first 3 .ByDate.Reverse }}{{ end }}
+    {{- with $posts }}
     <section id="posts" class="section section-bordered">
       <div class="container">
         <h2>{{ $h.posts.title }}</h2>
@@ -638,7 +640,8 @@ In `layouts/posts/list.html`, replace
 with
 
 ```html
-      {{- $pages := (partial "ko-posts.html" .).ByDate.Reverse }}
+      {{- $pages := partial "ko-posts.html" . }}
+      {{- with $pages }}{{ $pages = .ByDate.Reverse }}{{ end }}
       {{- with $pages }}
       {{- if eq $.Site.Language.Lang "ko" }}
       {{ partial "post-list.html" . }}
