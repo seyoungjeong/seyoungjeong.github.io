@@ -389,3 +389,8 @@ body {
     font-size: 1.5rem;
   }
 }
+
+.post-links {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+}

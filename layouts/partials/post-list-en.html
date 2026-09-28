@@ -1,5 +1,23 @@
+{{- /* English entries for Korean posts: .pages, .full (whole summary or a short one). */ -}}
 <ul class="post-list">
   {{- range .pages }}
-  <li><a class="post-title" href="{{ .RelPermalink }}" lang="ko">{{ .Title }}</a></li>
+  {{- $target := .RelPermalink }}
+  {{- $translated := false }}
+  {{- range .Translations }}
+    {{- if eq .Language.Lang "en" }}{{ $target = .RelPermalink }}{{ $translated = true }}{{ end }}
+  {{- end }}
+  <li id="{{ .File.ContentBaseName }}">
+    <a class="post-title" href="{{ $target }}"{{ if not $translated }} lang="ko"{{ end }}>{{ .Title }}</a>
+    {{- with .Params.summary_en }}
+    <p class="post-summary-en">{{ if $.full }}{{ . }}{{ else }}{{ . | plainify | truncate 160 }}{{ end }}</p>
+    {{- end }}
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+    {{- if $.full }}
+    <p class="post-links">
+      <a href="{{ $target }}">{{ if $translated }}{{ i18n "read_article" | safeHTML }}{{ else }}{{ i18n "read_full_ko" | safeHTML }}{{ end }}</a>
+      {{- with .Params.repo }} · <a href="{{ . }}">{{ i18n "code_on_github" }}</a>{{ end }}
+    </p>
+    {{- end }}
+  </li>
   {{- end }}
 </ul>

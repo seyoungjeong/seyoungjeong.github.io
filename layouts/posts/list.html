@@ -10,8 +10,14 @@
       {{- with .Description }}
       <p class="page-sub">{{ . }}</p>
       {{- end }}
-      {{- with .Pages.ByDate.Reverse }}
+      {{- $pages := partial "ko-posts.html" . }}
+      {{- with $pages }}{{ $pages = .ByDate.Reverse }}{{ end }}
+      {{- with $pages }}
+      {{- if eq $.Site.Language.Lang "ko" }}
       {{ partial "post-list.html" . }}
+      {{- else }}
+      {{ partial "post-list-en.html" (dict "pages" . "full" true) }}
+      {{- end }}
       {{- else }}
       <p class="page-sub">{{ i18n "no_posts" }}</p>
       {{- end }}
