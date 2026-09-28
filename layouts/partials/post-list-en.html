@@ -1,0 +1,5 @@
+<ul class="post-list">
+  {{- range .pages }}
+  <li><a class="post-title" href="{{ .RelPermalink }}" lang="ko">{{ .Title }}</a></li>
+  {{- end }}
+</ul>

@@ -1,15 +1,15 @@
 <header class="site-header">
   <div class="container header-inner">
-    <a class="wordmark" href="{{ "/" | relURL }}">알펜탈 시스템즈</a>
+    <a class="wordmark" href="{{ "/" | relLangURL }}">{{ i18n "wordmark" }}</a>
     <nav class="nav">
-      <a href="{{ "/#about" | relURL }}">소개</a>
-      <a href="{{ "/#services" | relURL }}">서비스</a>
-      {{- if where .Site.RegularPages "Section" "posts" }}
-      <a href="{{ "/posts/" | relURL }}">기술 블로그</a>
+      <a href="{{ "/#about" | relLangURL }}">{{ i18n "nav_about" }}</a>
+      <a href="{{ "/#services" | relLangURL }}">{{ i18n "nav_services" }}</a>
+      {{- if partial "ko-posts.html" . }}
+      <a href="{{ "/posts/" | relLangURL }}">{{ i18n "nav_blog" }}</a>
       {{- end }}
-      <a href="{{ "/#tech-stack" | relURL }}">기술 스택</a>
-      <a href="{{ "/#founder" | relURL }}">설립자</a>
-      <a href="{{ "/#contact" | relURL }}">문의</a>
+      <a href="{{ "/#tech-stack" | relLangURL }}">{{ i18n "nav_tech" }}</a>
+      <a href="{{ "/#founder" | relLangURL }}">{{ i18n "nav_founder" }}</a>
+      <a href="{{ "/#contact" | relLangURL }}">{{ i18n "nav_contact" }}</a>
     </nav>
   </div>
 </header>

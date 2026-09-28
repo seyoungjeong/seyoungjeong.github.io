@@ -1,12 +1,11 @@
 baseURL = "https://alpentalsystems.com/"
-languageCode = "ko-KR"
 timeZone = "Asia/Seoul"
-title = "알펜탈 시스템즈 (Alpental Systems)"
 disableKinds = ["taxonomy", "term"]
 enableRobotsTXT = true
+defaultContentLanguage = "ko"
+defaultContentLanguageInSubdir = false
 
 [params]
-  tagline = "임베디드 시스템을 위한 토탈 엔지니어링 솔루션"
   contactEmail = "contact@alpentalsystems.com"
 
 [[params.trackRecord]]
@@ -32,3 +31,19 @@ enableRobotsTXT = true
   location = "수원, 대한민국"
   description = "스마트폰 플랫폼 소프트웨어 개발 (Android)"
   url = ""
+
+[languages.ko]
+  languageCode = "ko-KR"
+  languageName = "한국어"
+  weight = 1
+  title = "알펜탈 시스템즈 (Alpental Systems)"
+  [languages.ko.params]
+    tagline = "임베디드 시스템을 위한 토탈 엔지니어링 솔루션"
+
+[languages.en]
+  languageCode = "en-US"
+  languageName = "English"
+  weight = 2
+  title = "Alpental Systems"
+  [languages.en.params]
+    tagline = "End-to-end embedded engineering, from board bring-up to mass production"

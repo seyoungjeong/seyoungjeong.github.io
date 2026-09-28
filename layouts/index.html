@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="{{ .Site.Language.Lang }}">
 {{ partial "head.html" . }}
 <body>
   {{ partial "header.html" . }}
-  {{- $h := index .Site.Data "ko" "home" }}
+  {{- $h := index .Site.Data .Site.Language.Lang "home" }}
 
   <main id="top">
     <section class="hero">
@@ -34,12 +34,18 @@
       </div>
     </section>
 
-    {{- with first 3 (where .Site.RegularPages "Section" "posts").ByDate.Reverse }}
+    {{- $posts := partial "ko-posts.html" . }}
+    {{- with $posts }}{{ $posts = first 3 .ByDate.Reverse }}{{ end }}
+    {{- with $posts }}
     <section id="posts" class="section section-bordered">
       <div class="container">
         <h2>{{ $h.posts.title }}</h2>
+        {{- if eq $.Site.Language.Lang "ko" }}
         {{ partial "post-list.html" . }}
-        <p class="more-link"><a href="{{ "/posts/" | relURL }}">{{ $h.posts.more | safeHTML }}</a></p>
+        {{- else }}
+        {{ partial "post-list-en.html" (dict "pages" . "full" false) }}
+        {{- end }}
+        <p class="more-link"><a href="{{ "/posts/" | relLangURL }}">{{ $h.posts.more | safeHTML }}</a></p>
       </div>
     </section>
     {{- end }}

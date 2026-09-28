@@ -1,0 +1,10 @@
+{{- /* The Korean posts, from any language: English has no post files of its own. */ -}}
+{{- $home := site.Home }}
+{{- if ne site.Language.Lang "ko" }}
+  {{- range site.Home.Translations }}
+    {{- if eq .Language.Lang "ko" }}{{ $home = . }}{{ end }}
+  {{- end }}
+{{- end }}
+{{- $pages := slice }}
+{{- with $home.GetPage "/posts" }}{{ $pages = .Pages }}{{ end }}
+{{- return $pages }}

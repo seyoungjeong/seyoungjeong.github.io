@@ -1,0 +1,58 @@
+hero_sub: "Built on two decades of research and mass-production experience at Samsung, Amazon, Microsoft, and Qualcomm."
+
+about:
+  title: "About"
+  body: "Alpental Systems is an engineering company built on more than 20 years of hands-on work in embedded firmware, RTOS, and device drivers, which its founder gained as a software engineer at Samsung Electronics, Amazon, Microsoft, and Qualcomm. Past projects span aerospace and consumer electronics: satellite flight computer systems, drone battery management systems (BMS), flight termination systems (FTS), WLAN SoC power optimization, Windows device drivers, edge-device data processing with AWS, and mass-production support. We take responsibility for the whole path from system bring-up to production deployment."
+
+services:
+  title: "Engineering Services"
+  cards:
+    - title: "RTOS & Ultra-Low-Power Firmware"
+      body: "Custom architectures on open-source RTOSes such as Zephyr and FreeRTOS; high-reliability firmware for small, low-power, mission-critical devices."
+    - title: "Embedded Linux & BSP Engineering"
+      body: "Custom Linux BSPs with the Yocto Project and Buildroot; device drivers, kernel optimization, real-time performance with PREEMPT_RT, and system porting."
+    - title: "LiDAR Sensor Data Processing & Pipelines"
+      body: "Real-time 3D LiDAR point cloud capture and filtering; object detection, point cloud compression, and 3D spatial pipelines optimized for embedded targets."
+    - title: "Embedded Vision & Camera Processing"
+      body: "Camera interface drivers for MIPI-CSI, USB, and Ethernet; real-time image preprocessing and pipelines with OpenCV and GPU/NPU accelerators, optimized for edge AI."
+    - title: "High-Speed Device Drivers & Bus Interfaces"
+      body: "From I2C, SPI, and UART to USB, PCIe, CAN, and Ethernet: register-level drivers and communication architectures that get the most out of the hardware."
+    - title: "System Bring-up & Troubleshooting"
+      body: "Hardware initialization and OS porting for new SoC and FPGA boards; hardware-software integration debugging with oscilloscopes and logic analyzers."
+    - title: "Secure Boot & Security"
+      body: "Secure bootloaders with MCUboot and Arm TrustZone; key management, integrity verification, and secure firmware updates over the air (FOTA)."
+    - title: "Low-Power Optimization & System Profiling"
+      body: "Dynamic power management (DVFS) and deep-sleep architectures; runtime profiling to cut resource use and remove bottlenecks."
+    - title: "Embedded CI/CD & HIL Test Infrastructure"
+      body: "Automated hardware-in-the-loop (HIL) pipelines on real target hardware; build, test, and release automation for consistent software quality."
+    - title: "Robotics & Edge AI Integration"
+      body: "Distributed robot software architectures on ROS and ROS 2; high-performance data paths between edge AI devices and AWS IoT cloud pipelines."
+
+posts:
+  title: "Technical Blog"
+  more: "All posts &rarr;"
+
+tech:
+  title: "Tech Stack"
+  cards:
+    - title: "Languages & OS"
+      badges: ["C/C++", "Rust", "Python", "Zephyr RTOS", "FreeRTOS", "Embedded Linux"]
+    - title: "Interfaces & Protocols"
+      badges: ["I2C / SPI / UART", "USB / PCIe", "CAN / CAN-FD", "Ethernet", "BLE", "WiFi"]
+    - title: "Vision, AI & Robotics"
+      badges: ["ROS / ROS 2", "LiDAR (Point Cloud)", "OpenCV", "AWS IoT"]
+    - title: "Hardware & Tools"
+      badges: ["ARM Cortex-M/A", "STM32 / nRF52", "OpenOCD / GDB", "Git / Docker"]
+
+founder:
+  title: "Founder"
+  name: "Seo Jeong (정석영)"
+  role: "Founder · Principal Engineer"
+  badges: ["Amazon", "Qualcomm", "Microsoft", "Samsung Electronics"]
+  paragraphs:
+    - "Seo Jeong began at Samsung Electronics and has spent more than 20 years as an embedded software engineer at global technology companies including Amazon, Qualcomm, and Microsoft, delivering high-reliability work on satellite flight computers, drone control systems, and wireless power optimization."
+    - "Alpental Systems brings this field experience to every engagement and takes responsibility for embedded engineering from start to finish."
+
+contact:
+  title: "Contact"
+  body: "For project inquiries, please email us."

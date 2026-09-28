@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="{{ .Site.Language.Lang }}">
 {{ partial "head.html" . }}
 <body>
   {{ partial "header.html" . }}
@@ -13,7 +13,7 @@
       {{- with .Pages.ByDate.Reverse }}
       {{ partial "post-list.html" . }}
       {{- else }}
-      <p class="page-sub">아직 게시된 글이 없습니다.</p>
+      <p class="page-sub">{{ i18n "no_posts" }}</p>
       {{- end }}
     </div>
   </main>

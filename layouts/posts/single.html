@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="{{ .Site.Language.Lang }}">
 {{ partial "head.html" . }}
 <body>
   {{ partial "header.html" . }}
@@ -23,9 +23,9 @@
 
       <footer class="post-footer">
         {{- with .Params.repo }}
-        <p><a href="{{ . }}">View code on GitHub</a></p>
+        <p><a href="{{ . }}">{{ i18n "view_code" }}</a></p>
         {{- end }}
-        <p>비슷한 프로젝트를 검토 중이시면 연락 주세요.</p>
+        <p>{{ i18n "post_contact" }}</p>
         <a class="cta" href="mailto:{{ .Site.Params.contactEmail }}">{{ .Site.Params.contactEmail }}</a>
       </footer>
     </article>
