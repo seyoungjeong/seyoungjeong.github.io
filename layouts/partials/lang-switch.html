@@ -12,5 +12,5 @@
   {{- end }}
 {{- end }}
 {{- with $target }}
-<a class="lang-switch" href="{{ . }}" hreflang="{{ $lang }}">{{ i18n "switch_label" }}</a>
+<a class="lang-switch" href="{{ . }}" hreflang="{{ $lang }}" lang="{{ $lang }}">{{ i18n "switch_label" }}</a>
 {{- end }}
