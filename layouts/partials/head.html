@@ -1,6 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   {{- $title := .Site.Title }}
   {{- if not .IsHome }}{{ $title = printf "%s | %s" .Title .Site.Title }}{{ end }}
   {{- $desc := .Site.Params.tagline }}
