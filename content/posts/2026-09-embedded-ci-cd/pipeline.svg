@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 690 400" font-family="-apple-system, Segoe UI, sans-serif" font-size="13">
+<rect width="690" height="400" fill="#ffffff"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/></marker></defs>
+<rect x="20" y="40" width="140" height="96" rx="8" fill="#f3f4f6" stroke="#6b7280"/>
+<text x="90" y="66" text-anchor="middle" font-weight="600" fill="#1f2937">코드 변경</text>
+<text x="90" y="88" text-anchor="middle" fill="#4b5563">push, 풀 리퀘스트</text>
+<text x="90" y="106" text-anchor="middle" fill="#4b5563">리뷰 시작</text>
+<rect x="190" y="40" width="140" height="96" rx="8" fill="#eef4ff" stroke="#3b6fd8"/>
+<text x="260" y="66" text-anchor="middle" font-weight="600" fill="#1f2937">빌드</text>
+<text x="260" y="88" text-anchor="middle" fill="#4b5563">모든 보드·설정</text>
+<text x="260" y="106" text-anchor="middle" fill="#4b5563">고정된 툴체인</text>
+<text x="260" y="126" text-anchor="middle" fill="#6b7280" font-size="11">수 분</text>
+<rect x="360" y="40" width="140" height="96" rx="8" fill="#eef4ff" stroke="#3b6fd8"/>
+<text x="430" y="66" text-anchor="middle" font-weight="600" fill="#1f2937">단위 테스트</text>
+<text x="430" y="88" text-anchor="middle" fill="#4b5563">PC에서 로직 검증</text>
+<text x="430" y="106" text-anchor="middle" fill="#4b5563">하드웨어 없음</text>
+<text x="430" y="126" text-anchor="middle" fill="#6b7280" font-size="11">수 초</text>
+<rect x="530" y="40" width="140" height="96" rx="8" fill="#eef4ff" stroke="#3b6fd8"/>
+<text x="600" y="66" text-anchor="middle" font-weight="600" fill="#1f2937">SW 통합 테스트</text>
+<text x="600" y="88" text-anchor="middle" fill="#4b5563">native_sim, QEMU</text>
+<text x="600" y="106" text-anchor="middle" fill="#4b5563">SITL 시뮬레이션</text>
+<text x="600" y="126" text-anchor="middle" fill="#6b7280" font-size="11">수 분~수십 분</text>
+<line x1="162" y1="88" x2="188" y2="88" stroke="#4b5563" stroke-width="2" marker-end="url(#ar)"/>
+<line x1="332" y1="88" x2="358" y2="88" stroke="#4b5563" stroke-width="2" marker-end="url(#ar)"/>
+<line x1="502" y1="88" x2="528" y2="88" stroke="#4b5563" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="530" y="200" width="140" height="96" rx="8" fill="#fff5e6" stroke="#d98a1c"/>
+<text x="600" y="226" text-anchor="middle" font-weight="600" fill="#1f2937">HIL 테스트</text>
+<text x="600" y="248" text-anchor="middle" fill="#4b5563">실제 보드에 플래시</text>
+<text x="600" y="266" text-anchor="middle" fill="#4b5563">시리얼·전원 제어</text>
+<text x="600" y="286" text-anchor="middle" fill="#6b7280" font-size="11">수 분~수 시간</text>
+<rect x="360" y="200" width="140" height="96" rx="8" fill="#ecfdf3" stroke="#2f9e5b"/>
+<text x="430" y="226" text-anchor="middle" font-weight="600" fill="#1f2937">릴리스</text>
+<text x="430" y="248" text-anchor="middle" fill="#4b5563">서명된 이미지</text>
+<text x="430" y="266" text-anchor="middle" fill="#4b5563">버전·변경 기록</text>
+<rect x="190" y="200" width="140" height="96" rx="8" fill="#ecfdf3" stroke="#2f9e5b"/>
+<text x="260" y="226" text-anchor="middle" font-weight="600" fill="#1f2937">배포</text>
+<text x="260" y="248" text-anchor="middle" fill="#4b5563">OTA, 일부 장비 먼저</text>
+<text x="260" y="266" text-anchor="middle" fill="#4b5563">문제 시 롤백</text>
+<line x1="600" y1="138" x2="600" y2="198" stroke="#4b5563" stroke-width="2" marker-end="url(#ar)"/>
+<line x1="528" y1="248" x2="502" y2="248" stroke="#4b5563" stroke-width="2" marker-end="url(#ar)"/>
+<line x1="358" y1="248" x2="332" y2="248" stroke="#4b5563" stroke-width="2" marker-end="url(#ar)"/>
+<text x="24" y="222" fill="#4b5563" font-size="12">어느 단계든 실패하면</text>
+<text x="24" y="240" fill="#4b5563" font-size="12">다음 단계로 가지 않고</text>
+<text x="24" y="258" fill="#4b5563" font-size="12">결과가 풀 리퀘스트에</text>
+<text x="24" y="276" fill="#4b5563" font-size="12">바로 표시됩니다.</text>
+<rect x="24" y="336" width="14" height="14" rx="3" fill="#eef4ff" stroke="#3b6fd8"/>
+<text x="44" y="348" fill="#4b5563" font-size="12">GitHub 호스팅 러너 (클라우드)</text>
+<rect x="250" y="336" width="14" height="14" rx="3" fill="#fff5e6" stroke="#d98a1c"/>
+<text x="270" y="348" fill="#4b5563" font-size="12">자체 러너 + 시험 보드 (사무실 벤치)</text>
+<rect x="500" y="336" width="14" height="14" rx="3" fill="#ecfdf3" stroke="#2f9e5b"/>
+<text x="520" y="348" fill="#4b5563" font-size="12">서명·배포 (승인 후)</text>
+<text x="24" y="378" fill="#6b7280" font-size="11">시간은 규모에 따라 크게 달라지는 대략적인 값입니다.</text>
+</svg>
