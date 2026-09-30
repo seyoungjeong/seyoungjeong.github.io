@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 690 300" font-family="-apple-system, Segoe UI, sans-serif" font-size="13">
+<rect width="690" height="300" fill="#ffffff"/>
+<text x="20" y="30" font-weight="600" fill="#1f2937">64 GB microSD 카드의 파티션</text>
+<rect x="20" y="50" width="120" height="70" rx="6" fill="#f3f4f6" stroke="#6b7280"/>
+<text x="80" y="78" text-anchor="middle" font-weight="600" fill="#1f2937">boot</text>
+<text x="80" y="98" text-anchor="middle" fill="#4b5563">FAT, 256 MB</text>
+<rect x="150" y="50" width="150" height="70" rx="6" fill="#eef4ff" stroke="#3b6fd8"/>
+<text x="225" y="78" text-anchor="middle" font-weight="600" fill="#1f2937">슬롯 A</text>
+<text x="225" y="98" text-anchor="middle" fill="#4b5563">ext4, 2 GB</text>
+<rect x="310" y="50" width="150" height="70" rx="6" fill="#fff5e6" stroke="#d98a1c"/>
+<text x="385" y="78" text-anchor="middle" font-weight="600" fill="#1f2937">슬롯 B</text>
+<text x="385" y="98" text-anchor="middle" fill="#4b5563">ext4, 2 GB</text>
+<rect x="470" y="50" width="200" height="70" rx="6" fill="#ecfdf3" stroke="#2f9e5b"/>
+<text x="570" y="78" text-anchor="middle" font-weight="600" fill="#1f2937">data</text>
+<text x="570" y="98" text-anchor="middle" fill="#4b5563">ext4, 나머지 (약 53 GB)</text>
+<text x="20" y="152" fill="#1f2937" font-weight="600">boot</text>
+<text x="20" y="172" fill="#4b5563" font-size="12">Pi 펌웨어, U-Boot,</text>
+<text x="20" y="190" fill="#4b5563" font-size="12">부팅 스크립트,</text>
+<text x="20" y="208" fill="#4b5563" font-size="12">U-Boot 변수(uboot.env)</text>
+<text x="20" y="232" fill="#b45309" font-size="12">두 슬롯이 함께 쓰고,</text>
+<text x="20" y="250" fill="#b45309" font-size="12">업데이트로 바뀌지 않음</text>
+<text x="160" y="152" fill="#1f2937" font-weight="600">슬롯 A / B</text>
+<text x="160" y="172" fill="#4b5563" font-size="12">루트 파일 시스템 + 커널과 장치 트리.</text>
+<text x="160" y="190" fill="#4b5563" font-size="12">실행 중에는 읽기 전용.</text>
+<text x="160" y="208" fill="#4b5563" font-size="12">업데이트는 실행 중이 아닌 슬롯에만 씀.</text>
+<text x="480" y="152" fill="#1f2937" font-weight="600">data</text>
+<text x="480" y="172" fill="#4b5563" font-size="12">RAUC 상태, SSH 호스트 키,</text>
+<text x="480" y="190" fill="#4b5563" font-size="12">헬스 체크 기록, 사용자 데이터.</text>
+<text x="480" y="208" fill="#4b5563" font-size="12">처음 부팅할 때 카드 끝까지 늘림.</text>
+<text x="480" y="232" fill="#047857" font-size="12">업데이트와 롤백에도 유지</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 690 300" font-family="-apple-system, Segoe UI, sans-serif" font-size="13">
+<rect width="690" height="300" fill="#ffffff"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/></marker></defs>
+<rect x="20" y="20" width="300" height="200" rx="10" fill="none" stroke="#9ca3af" stroke-dasharray="6 4"/>
+<text x="36" y="42" fill="#6b7280" font-size="12">빌드 컴퓨터</text>
+<rect x="40" y="56" width="120" height="58" rx="8" fill="#f3f4f6" stroke="#6b7280"/>
+<text x="100" y="80" text-anchor="middle" font-weight="600" fill="#1f2937">데모 CA</text>
+<text x="100" y="100" text-anchor="middle" fill="#4b5563" font-size="12">개인 키는 보관만</text>
+<rect x="180" y="56" width="120" height="58" rx="8" fill="#f3f4f6" stroke="#6b7280"/>
+<text x="240" y="80" text-anchor="middle" font-weight="600" fill="#1f2937">서명 인증서</text>
+<text x="240" y="100" text-anchor="middle" fill="#4b5563" font-size="12">CA가 발급</text>
+<line x1="162" y1="85" x2="178" y2="85" stroke="#4b5563" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="110" y="140" width="160" height="62" rx="8" fill="#eef4ff" stroke="#3b6fd8"/>
+<text x="190" y="165" text-anchor="middle" font-weight="600" fill="#1f2937">번들 (.raucb)</text>
+<text x="190" y="186" text-anchor="middle" fill="#4b5563" font-size="12">이미지 + 서명 + 서명 시각</text>
+<line x1="240" y1="116" x2="210" y2="138" stroke="#4b5563" stroke-width="2" marker-end="url(#ar)"/>
+<line x1="272" y1="171" x2="386" y2="171" stroke="#4b5563" stroke-width="2" marker-end="url(#ar)"/>
+<text x="330" y="162" text-anchor="middle" fill="#4b5563" font-size="12">전송 (어떤 경로든)</text>
+<rect x="370" y="20" width="300" height="200" rx="10" fill="none" stroke="#9ca3af" stroke-dasharray="6 4"/>
+<text x="386" y="42" fill="#6b7280" font-size="12">라즈베리 파이 5</text>
+<rect x="390" y="56" width="260" height="58" rx="8" fill="#ecfdf3" stroke="#2f9e5b"/>
+<text x="520" y="80" text-anchor="middle" font-weight="600" fill="#1f2937">키링: CA 인증서 하나</text>
+<text x="520" y="100" text-anchor="middle" fill="#4b5563" font-size="12">이미지에 들어 있음, 개인 키는 없음</text>
+<rect x="390" y="140" width="260" height="62" rx="8" fill="#fff5e6" stroke="#d98a1c"/>
+<text x="520" y="165" text-anchor="middle" font-weight="600" fill="#1f2937">rauc install: 기록 전에 확인</text>
+<text x="520" y="186" text-anchor="middle" fill="#4b5563" font-size="12">서명 → CA, 유효 기간은 서명 시각 기준</text>
+<line x1="520" y1="116" x2="520" y2="138" stroke="#4b5563" stroke-width="2" marker-end="url(#ar)"/>
+<text x="20" y="252" fill="#4b5563" font-size="12">서명이 다른 CA의 것이거나 한 바이트라도 바뀌면 설치를 거부합니다. 파이 5의 하드웨어 보안 부팅(OTP 키)은</text>
+<text x="20" y="272" fill="#4b5563" font-size="12">쓰지 않았으므로, 부팅 체인(펌웨어, U-Boot, 커널) 자체는 부팅할 때 검증되지 않습니다.</text>
+</svg>
