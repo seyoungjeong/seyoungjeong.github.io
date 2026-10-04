@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" font-family="-apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="14">
+  <rect width="720" height="300" fill="#ffffff"/>
+  <text x="20" y="30" font-size="16" font-weight="bold" fill="#1f2937">STM32F303VC 플래시 256 KB</text>
+  <g stroke="#374151" stroke-width="1.5">
+    <rect x="20" y="60" width="135" height="90" fill="#dbeafe"/>
+    <rect x="155" y="60" width="281" height="90" fill="#dcfce7"/>
+    <rect x="436" y="60" width="240" height="90" fill="#fef3c7"/>
+    <rect x="676" y="60" width="24" height="90" fill="#e5e7eb"/>
+  </g>
+  <text x="87" y="98" text-anchor="middle" font-weight="bold">MCUboot</text>
+  <text x="87" y="120" text-anchor="middle">48 KB</text>
+  <text x="295" y="98" text-anchor="middle" font-weight="bold">slot 0 (image-0)</text>
+  <text x="295" y="120" text-anchor="middle">100 KB · 지금 실행 중인 앱</text>
+  <text x="556" y="98" text-anchor="middle" font-weight="bold">slot 1 (image-1)</text>
+  <text x="556" y="120" text-anchor="middle">102 KB · 새 이미지</text>
+  <text x="688" y="175" text-anchor="middle" font-size="12">storage</text>
+  <text x="688" y="191" text-anchor="middle" font-size="12">6 KB</text>
+  <g font-size="12" fill="#6b7280">
+    <text x="20" y="170">0x00000</text><text x="155" y="170">0x0C000</text><text x="436" y="170">0x25000</text><text x="640" y="215">0x3E800</text>
+  </g>
+  <line x1="688" y1="150" x2="688" y2="160" stroke="#374151"/>
+  <text x="20" y="250" font-size="13" fill="#1f2937">slot 1이 2 KB(한 섹터) 더 큽니다. MCUboot v2.4.0에서는 이 배치가 swap using offset에 맞고,</text>
+  <text x="20" y="272" font-size="13" fill="#1f2937">swap using move는 반대로 slot 0이 한 섹터 더 커야 합니다. storage에는 나침반 캘리브레이션이 남습니다.</text>
+</svg>

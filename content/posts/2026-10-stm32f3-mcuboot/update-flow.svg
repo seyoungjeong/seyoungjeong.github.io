@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 260" font-family="-apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="14">
+  <rect width="960" height="260" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#374151"/></marker></defs>
+  <g stroke="#374151" stroke-width="1.5">
+    <rect x="20" y="40" width="150" height="60" rx="6" fill="#f3f4f6"/>
+    <rect x="210" y="40" width="150" height="60" rx="6" fill="#f3f4f6"/>
+    <rect x="400" y="40" width="160" height="60" rx="6" fill="#f3f4f6"/>
+    <rect x="600" y="40" width="140" height="60" rx="6" fill="#f3f4f6"/>
+    <rect x="600" y="160" width="140" height="60" rx="6" fill="#dcfce7"/>
+    <rect x="790" y="160" width="160" height="60" rx="6" fill="#fee2e2"/>
+    <rect x="400" y="160" width="160" height="60" rx="6" fill="#fee2e2"/>
+    <rect x="210" y="160" width="150" height="60" rx="6" fill="#fef3c7"/>
+  </g>
+  <text x="95" y="66" text-anchor="middle">USB로 slot 1에</text><text x="95" y="86" text-anchor="middle">업로드 (SMP)</text>
+  <text x="285" y="66" text-anchor="middle">"다음 부팅에</text><text x="285" y="86" text-anchor="middle">시험" 표시 + 리셋</text>
+  <text x="480" y="66" text-anchor="middle">MCUboot: 서명 확인</text><text x="480" y="86" text-anchor="middle">→ slot 교체(swap)</text>
+  <text x="670" y="66" text-anchor="middle">새 앱 시험 부팅</text><text x="670" y="86" text-anchor="middle">헬스 체크</text>
+  <text x="670" y="186" text-anchor="middle" font-weight="bold">통과: confirm</text><text x="670" y="206" text-anchor="middle">새 버전 확정</text>
+  <text x="870" y="186" text-anchor="middle" font-weight="bold">실패: confirm 안 함</text><text x="870" y="206" text-anchor="middle">→ 다음 리셋에 되돌림</text>
+  <text x="480" y="186" text-anchor="middle" font-weight="bold">서명이 틀림</text><text x="480" y="206" text-anchor="middle">→ 지우고 기존 앱 실행</text>
+  <text x="285" y="186" text-anchor="middle" font-weight="bold">낮은 버전</text><text x="285" y="206" text-anchor="middle">→ 도구가 업로드 거부</text>
+  <g stroke="#374151" stroke-width="1.5" fill="none" marker-end="url(#a)">
+    <line x1="170" y1="70" x2="208" y2="70"/><line x1="360" y1="70" x2="398" y2="70"/><line x1="560" y1="70" x2="598" y2="70"/>
+    <line x1="670" y1="100" x2="670" y2="158"/><line x1="720" y1="100" x2="840" y2="158"/>
+    <line x1="480" y1="100" x2="480" y2="158"/><line x1="95" y1="100" x2="230" y2="158"/>
+  </g>
+</svg>
