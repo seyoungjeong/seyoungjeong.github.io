@@ -38,7 +38,7 @@ defaultContentLanguageInSubdir = false
   weight = 1
   title = "알펜탈 시스템즈 (Alpental Systems)"
   [languages.ko.params]
-    tagline = "임베디드 시스템을 위한 토탈 엔지니어링 솔루션"
+    tagline = "AI와 로봇의 설계부터 구현까지"
 
 [languages.en]
   languageCode = "en-US"
@@ -46,4 +46,4 @@ defaultContentLanguageInSubdir = false
   weight = 2
   title = "Alpental Systems"
   [languages.en.params]
-    tagline = "End-to-end embedded engineering, from board bring-up to mass production"
+    tagline = "AI and robotics, from design to implementation"
